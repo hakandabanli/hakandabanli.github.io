@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarente</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body class="bg-light">
+    <section>
+        <nav class="sarente-navbar navbar navbar-expand-lg px-5">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img src="images/Sarente_Logo.png" width="146" height="32">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link sarente-nav-link" href="#">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link sarente-nav-link" href="#">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link sarente-nav-link" href="#">Ürünler</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link sarente-nav-link" href="#">Çözümler</a>
+                    </li>
+                    <li class="nav-item">
+                      <button type="button" id="nav-contact-button-mobile" class="btn blue hover-blue mt-2">İletişime Geçin</button>
+                      <div class="language-selector-mobile dropdown sarente-silver me-3">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <svg class="language-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <g clip-path="url(#clip0_34_88)">
+                              <path d="M16.5 9C16.5 13.1421 13.1421 16.5 9 16.5M16.5 9C16.5 4.85786 13.1421 1.5 9 1.5M16.5 9C16.5 7.34315 13.1421 6 9 6C4.85786 6 1.5 7.34315 1.5 9M16.5 9C16.5 10.6569 13.1421 12 9 12C4.85786 12 1.5 10.6569 1.5 9M9 16.5C4.85786 16.5 1.5 13.1421 1.5 9M9 16.5C10.6569 16.5 12 13.1421 12 9C12 4.85786 10.6569 1.5 9 1.5M9 16.5C7.34315 16.5 6 13.1421 6 9C6 4.85786 7.34315 1.5 9 1.5M1.5 9C1.5 4.85786 4.85786 1.5 9 1.5" stroke="#A4A4A4" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_34_88">
+                                <rect width="18" height="18" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                          <span class="text-silver mx-1">TR</span>
+                          <i class="fa-solid fa-chevron-down fa-2xs text-silver"></i>
+                        </button>
+                        <ul class="dropdown-menu language-menu">
+                          <li><a class="dropdown-item" href="#">TR</a></li>
+                          <li><a class="dropdown-item" href="#">EN</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+              </div>
+
+              <div class="language-selector dropdown sarente-silver me-3">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <svg class="language-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <g clip-path="url(#clip0_34_88)">
+                      <path d="M16.5 9C16.5 13.1421 13.1421 16.5 9 16.5M16.5 9C16.5 4.85786 13.1421 1.5 9 1.5M16.5 9C16.5 7.34315 13.1421 6 9 6C4.85786 6 1.5 7.34315 1.5 9M16.5 9C16.5 10.6569 13.1421 12 9 12C4.85786 12 1.5 10.6569 1.5 9M9 16.5C4.85786 16.5 1.5 13.1421 1.5 9M9 16.5C10.6569 16.5 12 13.1421 12 9C12 4.85786 10.6569 1.5 9 1.5M9 16.5C7.34315 16.5 6 13.1421 6 9C6 4.85786 7.34315 1.5 9 1.5M1.5 9C1.5 4.85786 4.85786 1.5 9 1.5" stroke="#A4A4A4" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_34_88">
+                        <rect width="18" height="18" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="text-silver mx-1">TR</span>
+                  <i class="fa-solid fa-chevron-down fa-2xs text-silver"></i>
+                </button>
+                <ul class="dropdown-menu language-menu">
+                  <li><a class="dropdown-item" href="#">TR</a></li>
+                  <li><a class="dropdown-item" href="#">EN</a></li>
+                </ul>
+              </div>
+              <button type="button" id="nav-contact-button" class="btn sarente-button blue hover-blue">İletişime Geçin</button>
+            </div>
+
+          </nav>
+    </section>
+
+    <section class="sarente-main-slider col-md-12">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active" data-bs-interval="7000">
+            <div class="slider-item row d-flex align-items-center mx-md-3 mx-lg-5 py-md-3 py-lg-5">
+              <div class="col-md-3 position-absolute">
+                <h1 class="title textw-600 mb-0">Sıradaki Oyun</h1>
+                <h1 class="title textw-800 text-blue">Sizin Olsun!</h1>
+                <p>Oyunun gücünden faydalanın!
+                  Müşterilerinizle etkileşiminizi en üst seviyeye taşıyın.
+                  Farklı konseptlerde firmanıza özel olarak tasarlanmış oyunlarla satışlarınızı arttırın.</p>
+                <button type="button" class="btn sarente-button black hover-black textw-500 me-md-5">ŞİMDİ DENEYİN!</button>
+              </div>
+              <img src="images/slider-img3.png" class="d-block w-100">
+            </div>
+          </div>
+          <!--
+          <div class="carousel-item" data-bs-interval="7000">
+            <img src="images/slider-img3.png" class="d-block w-100">
+          </div>
+          -->
+        </div>
+      </div>
+    </section>
+
+    <section class="my-5 mx-lg-5">
+      <div class="container-fluid">
+        <div class="sarente-solutions-content">
+          <div class="row d-flex justify-content-center text-center mb-3 mx-auto">
+            <h1 class="title text-center">Sarente Neden<br>Sizin İçin Doğru Tercih?</h1>
+            <p class="paragraph text-gray text-center my-3">Güncel teknolojilerle hazırlanmış uygulamalarımızla<br>hayal ettiğiniz çözümlere ulaşın!</p>
+          </div>
+          <div class="row d-flex justify-content-around">
+              <div class="mini-card col-sm-10 col-md-4 col-lg-3 py-5">
+                <img src="images/sol3.png"/>
+                <h4 class="textw-800 my-3">E-Ticaret Oyun ve Oyunlaştırma Çözümleri</h4>
+                <p>Farklı konseptlerde özel olarak hazırlanmış oyunlarla etkileşiminizi ve satışlarınızı arttırın.</p>
+              </div>
+              <div class="mini-card col-sm-10 col-md-4 col-lg-3 my-4 my-md-0 my-lg-0">
+                <img src="images/sol2.png"/>
+                <h4 class="textw-800 my-3">Veri İşleme ve Görselleştirme</h4>
+                <p>Güncel teknolojilerle ihtiyaçlarınıza uygun veri işleme ve görselleştirme uygulamaları kullanın.</p>
+              </div>
+              <div class="mini-card col-sm-10 col-md-4 col-lg-3">
+                <img src="images/sol1.png"/>
+                <h4 class="textw-800 my-3">Ayrıcalıklı Hesap Yönetimi</h4>
+                <p>Mobil cihaz yönetim platformu ile cihazlarınızı kurumlarınızın ihtiyaçlarına uygun olarak kullanın.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-5 mx-5">
+      <div class="row d-flex align-items-center justify-content-between">
+        <div class="col-md-3 my-5">
+          <h6 class="title-sm">Bizi Tercih Eden<br>Müşterilerimiz</h6>
+        </div>
+        <div class="preferred-customer col-md-2 my-3">
+          <img class="img-fluid" src="images/customer1.png"/>
+        </div>
+        <div class="preferred-customer col-md-2 my-3">
+          <img class="img-fluid" src="images/customer2.png"/>
+        </div>
+        <div class="preferred-customer col-md-2 my-3">
+          <img class="img-fluid" src="images/customer3.png"/>
+        </div>
+        <div class="preferred-customer col-md-2 my-3">
+          <img class="img-fluid" src="images/customer4.png"/>
+        </div>
+      </div>
+    </section>
+
+</body>
+</html>
