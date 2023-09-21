@@ -23,6 +23,8 @@ html,body{
     font-weight: 500;
     line-height: normal;
 }
+.sarente-logo{transition: all 0.3s ease-in-out;}
+.sarente-logo:hover{ transform: scale(1.025); }
 .text-blue{ color: var(--sarente-blue)!important; }
 .text-dark{ color: var(--sarente-dark)!important; }
 .text-silver{ color: var(--sarente-silver)!important; }
@@ -109,9 +111,11 @@ html,body{
     height: 3px!important;
     padding: 2px!important;
     border-radius: 50%!important;
-}
-.carousel-dark .carousel-indicators [data-bs-target] {
     background-color: var(--sarente-silver)!important;
+}
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: var(--sarente-blue)!important;
 }
 /* MAIN SLIDER CSS END */
 
@@ -198,37 +202,63 @@ html,body{
 .newsletter-input button{
     outline: none!important;
 }
+.footer-title{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 3;
+}
 /* FOOTER SECTION CSS START */
 
 /* COMMENTS SECTION CSS START */
-.comments .card{
-    background: var(--sarente-emerald);
-    border-radius: 40px!important;
-    border: none;
-}
-.user-info{ min-width: 100px; }
-.user-picture{
-    width: 400px;
-    background: var(--sarente-blue);
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    height: 70px;
-    width: 60px;
-    position: relative;
-    top: -42px;
-    left: 25%;
-}
-.user-picture img{
-    margin-top: 15px;
-    margin-left: 5px;
-}
 .comment-card{
     background: var(--sarente-emerald);
     border-radius: 40px!important;
     border: none;
+    overflow: hidden!important;
+}
+.user-info{ min-width: 100px; }
+.comment-user{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -56px;
+    left: 50%;
+}
+.comment-badge{ 
+    width: 72px;
+    height: 111px;
+    background: var(--sarente-blue);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.comment-user-picture{
+    position: relative;
+    top: 45px;
+}
+.comment-user .comment-user-info{
+
 }
 /* COMMENTS SECTION CSS END */
 
+/* SLICK SLIDE CSS START */
+.slick-track {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.slick-dots {
+    bottom: 0px!important;
+    position: static!important;
+}
+.slick-dots li {
+    margin: 0!important;
+}
+.slick-dots li{ font-size: 25px!important; }
+.slick-dots li.slick-active button:before {
+    color: var(--sarente-blue-hover)!important;
+}
+.slick-dots li button:before{ font-size: 8px!important; }
+/* SLICK SLIDE CSS END */ 
 
 
 
@@ -246,6 +276,11 @@ html,body{
         padding: 3rem!important;
     }
     .slider-txtbox{ left: 0!important; }
+    .have-questions-bg{
+        justify-content: center!important;
+    }
+    .comment-user-info{ display: none!important; }
+    .comment-user { left: 0!important; height: 400px!important; }
 }
 @media screen and (min-width: 992px) { 
     .navbar-nav{ margin-left: 8rem; }
