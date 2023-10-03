@@ -1,0 +1,19 @@
+.fade-to-visible{ animation: fade_opacity 1s ease-in 0s; }
+@keyframes fade_opacity {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.fade-transform{ animation: fade_scale 1s ease-in 0s; }
+@keyframes fade_scale {
+    0%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
