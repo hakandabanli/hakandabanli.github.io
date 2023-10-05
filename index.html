@@ -7,12 +7,31 @@
 
     <style>
       html,body{
-          color: var(--sarente-silver);
-          font-family: Manrope!important;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
+        max-width: 100%;
+        overflow-x: hidden;
+        color: var(--sarente-silver);
+        font-family: Manrope!important;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      .index-title-mini{
+        color: #1B1B1B!important;
+        font-family: Manrope!important;
+        font-size: 20px!important;
+        font-style: normal!important;
+        font-weight: 800!important;
+        line-height: normal!important;
+        letter-spacing: -1px!important;
+      }
+      .index-paragraph{
+        color: #777!important;
+        font-family: Manrope!important;
+        font-size: 14px!important;
+        font-style: normal!important;
+        font-weight: 500!important;
+        line-height: normal!important;
       }
       .dropdown-menu{
         padding: 10px 5px 10px 5px!important;
@@ -38,6 +57,16 @@
       .dropdown-item.active, .dropdown-item:active {
         color: #fff!important;
       }
+      .customers{ width: 70%!important; }
+      .customers .customer-img{
+        width:  200px;
+        height: 50px;
+        object-fit: contain;
+        opacity: 0.5;
+      }
+      .customer-item img { transition: all 0.3s ease-in-out!important; cursor: pointer; }
+      .customer-item img:hover{ filter: brightness(50%); }
+
     </style>
 
     <!-- IMPORT FROM PATHS -->
@@ -82,8 +111,13 @@
                         <li><a class="dropdown-item" href="/urunler/reactor/">Reactor</a></li>
                       </ul>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link sarente-nav-link" href="#">Çözümler</a>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link sarente-nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Çözümler <i class="fa-solid fa-angle-down align-middle"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://www.gameontech.co.uk/">GameOn</a></li>
+                      </ul>
                     </li>
                     <li class="nav-item">
                       <button type="button" onclick="GoContactForm()" id="nav-contact-button-mobile" class="btn blue hover-blue mt-2">İletişime Geçin</button>
@@ -140,11 +174,23 @@
 
     <!-- MAIN SLIDER SECTION START -->
     <section class="sarente-main-slider col-md-12 pb-5">
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
+        <div class="slider-items">
 
-          <div class="carousel-item active" data-bs-interval="7000">
-            <div style="background-image: url(/images/slider-img3.png);" class="slider-item row d-flex align-items-center mx-md-3 mx-lg-5 py-md-3 py-lg-5">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <div style="background-image: url(/images/main-slider-img1.png); background-repeat: no-repeat; background-size: contain; background-position: right!important;" class="slider-item row d-flex align-items-center mx-md-3 mx-lg-5 py-md-3 py-lg-5">
+              <div class="col-md-3 slider-txtbox position-absolute">
+                <h1 class="title textw-600 mb-0">Sıradaki Oyun</h1>
+                <h1 class="title textw-800 text-blue">Sizin Olsun!</h1>
+                <p>Oyunun gücünden faydalanın!
+                  Müşterilerinizle etkileşiminizi en üst seviyeye taşıyın.
+                  Farklı konseptlerde firmanıza özel olarak tasarlanmış oyunlarla satışlarınızı arttırın.</p>
+                <button type="button" class="btn sarente-button black hover-black textw-500 me-md-5">ŞİMDİ DENEYİN!</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="5000">
+            <div style="background-image: url(/images/main-slider-img1.png); background-repeat: no-repeat; background-size: contain; background-position: right!important;" class="slider-item row d-flex align-items-center mx-md-3 mx-lg-5 py-md-3 py-lg-5">
               <div class="col-md-3 slider-txtbox position-absolute">
                 <h1 class="title textw-600 mb-0">Sıradaki Oyun</h1>
                 <h1 class="title textw-800 text-blue">Sizin Olsun!</h1>
@@ -157,7 +203,6 @@
           </div>
         
         </div>
-      </div>
     </section>
     <!-- MAIN SLIDER SECTION END -->
 
@@ -170,21 +215,37 @@
             <p class="paragraph text-gray text-center my-3">Güncel teknolojilerle hazırlanmış uygulamalarımızla<br>hayal ettiğiniz çözümlere ulaşın!</p>
           </div>
           <div class="row d-flex justify-content-around">
-              <div class="mini-card col-sm-10 col-md-4 col-lg-3 py-5">
+
+            <a href="/urunler/sarentegames/" class="mini-card col-sm-10 col-md-4 col-lg-3 py-5">
+              <div class="">
                 <img src="images/sol3.png"/>
-                <h4 class="textw-800 my-3">E-Ticaret Oyun ve Oyunlaştırma Çözümleri</h4>
-                <p>Farklı konseptlerde özel olarak hazırlanmış oyunlarla etkileşiminizi ve satışlarınızı arttırın.</p>
+                <h4 class="index-title-mini my-3">E-Ticaret Oyun ve Oyunlaştırma Çözümleri</h4>
+                <p class="index-paragraph">Farklı konseptlerde özel olarak hazırlanmış oyunlarla etkileşiminizi ve satışlarınızı arttırın.</p>
               </div>
-              <div class="mini-card col-sm-10 col-md-4 col-lg-3 my-4 my-md-0 my-lg-0">
+            </a>
+              
+            <a href="/urunler/reactor/" class="mini-card col-sm-10 col-md-4 col-lg-3 py-5 my-4 my-md-0">
+              <div >
                 <img src="images/sol2.png"/>
-                <h4 class="textw-800 my-3">Veri İşleme ve Görselleştirme</h4>
-                <p>Güncel teknolojilerle ihtiyaçlarınıza uygun veri işleme ve görselleştirme uygulamaları kullanın.</p>
+                <h4 class="index-title-mini my-3">Veri İşleme ve Görselleştirme</h4>
+                <p class="index-paragraph">Güncel teknolojilerle ihtiyaçlarınıza
+                  uygun veri işleme ve görselleştirme
+                  uygulamaları kullanın.
+                </p>
               </div>
-              <div class="mini-card col-sm-10 col-md-4 col-lg-3">
+            </a>
+
+            <a href="/urunler/mai/" class="mini-card col-sm-10 col-md-4 col-lg-3 py-5">
+              <div >
                 <img src="images/sol1.png"/>
-                <h4 class="textw-800 my-3">Ayrıcalıklı Hesap Yönetimi</h4>
-                <p>Mobil cihaz yönetim platformu ile cihazlarınızı kurumlarınızın ihtiyaçlarına uygun olarak kullanın.</p>
+                <h4 class="index-title-mini my-3">Dijitalleştirilmiş Müşteri Etkileşimi</h4>
+                <p class="index-paragraph">Müşterilerinizin tüm aksiyonlarını
+                  takip edin, puanlandırın ve ödüller
+                  tanımlayın.
+                </p>
               </div>
+            </a>
+
           </div>
         </div>
       </div>
@@ -192,22 +253,26 @@
     <!-- NEDEN SARENTE? SECTION END -->
 
     <!-- BİZİ TERCİH EDEN MÜŞTERİLER SECTION START -->
-    <section class="m-5">
-      <div class="row d-flex align-items-center justify-content-between">
+    <section class="top-customers m-5">
+      <div class="customer-row row d-flex align-items-center">
         <div class="col-md-3 my-5">
           <h6 class="title-sm">Bizi Tercih Eden<br>Müşterilerimiz</h6>
         </div>
-        <div class="preferred-customer col-md-2 my-3">
-          <img class="img-fluid" src="images/customer1.png"/>
-        </div>
-        <div class="preferred-customer col-md-2 my-3">
-          <img class="img-fluid" src="images/customer2.png"/>
-        </div>
-        <div class="preferred-customer col-md-2 my-3">
-          <img class="img-fluid" src="images/customer3.png"/>
-        </div>
-        <div class="preferred-customer col-md-2 my-3">
-          <img class="img-fluid" src="images/customer4.png"/>
+        <div class="col-md-8 customers overflow-hidden">
+          <div class="customer-item row d-flex align-items-center justify-content-start">
+            <div class="preferred-customer col-md-2 my-3">
+              <img class="customer-img defacto" src="images/defacto.png"/>
+            </div>
+            <div class="preferred-customer col-md-2 my-3">
+              <img class="customer-img teknosa" src="images/teknosa.png"/>
+            </div>
+            <div class="preferred-customer col-md-2 my-3">
+              <img class="customer-img vodafone" src="images/vodafone.png"/>
+            </div>
+            <div class="preferred-customer col-md-2 my-3">
+              <img class="customer-img tctvob" src="images/tctvob.png"/>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -397,6 +462,39 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
+      $('.slider-items').slick({
+        dots: false,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        draggable: false,
+        autoplay: true,
+        autoplaySpeed: 7000,
+      });
+
+      $('.customer-item').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        draggable: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: false,
+              centerMode: true,
+            }
+          }
+        ]
+      });
+
+
       $('.customer-comments').slick({
         dots: true,
         infinite: true,
