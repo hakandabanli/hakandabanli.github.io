@@ -11,6 +11,40 @@
                 background: #3C75DE!important;
                 overflow-x: hidden!important;
             }
+            .custom-title1{
+                color: #FFF!important;
+                text-align: center!important;
+                font-family: Outfit!important;
+                font-size: 48px!important;
+                font-style: normal!important;
+                font-weight: 600!important;
+                line-height: normal!important;
+            }
+            .custom-text1{
+                color: #FFF!important;
+                text-align: center!important;
+                font-family: Outfit!important;
+                font-size: 24px!important;
+                font-style: normal!important;
+                font-weight: 600!important;
+                line-height: 32px!important;
+            }
+            .custom-game-title{
+                color: #FFF;
+                font-family: Outfit;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            .custom-game-desc{
+                color: #FFF;
+                font-family: Outfit;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 56px;
+            }
             .header{
                 height: 600px;
                 background: #2661D7;
@@ -124,10 +158,9 @@
                 color: #7EC5FC!important;
                 opacity: 1;
             }
-            .try-now{
-                background: #2661D7!important;
-            }
+            .try-now{ background: #2661D7!important; }
             .try-now .platform-badges .badge{ color: #9CF8F6!important; background: #316CE0!important; }
+            .try-now .platform-badges .badge:hover{ background: #0000002c!important; }
 
             .input-container {
                 position: relative;
@@ -173,6 +206,20 @@
                 height: 100%!important;
             }
             .header .slick-list .slick-track .slick-slide div{ height: 100%!important; }
+            .demo-games{
+                background: url('/images/try-games-bg.png');
+                background-position: left;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            .game-card img{ transition:all 0.3s linear!important; }
+            .game-card:hover img{
+                margin-top: -10px;
+            }
+            .badge{ transition: all 0.2s ease-in-out!important; }
+            .badge:hover{
+                background: #0000002c;
+            }
 
 
         </style>
@@ -224,31 +271,31 @@
 
         <div class="power-of-games py-5">
             <div class="row d-flex justify-content-center pt-5">
-                <h1 class="text-white text-center py-5">Oyunun Gücünden Faydalanın!</h1>
-                <div class="col-md-4">
-                    <img src="/images/rocket.png" width="200" height="200" class="center"/>
-                    <p class="paragraph text-white text-center">
-                        Oyun kütüphanesinden
+                <h1 class="custom-title1 text-center py-5">Oyunun Gücünden Faydalanın!</h1>
+                <div class="game-card col-md-4">
+                    <img src="/images/rocket.png" width="200" height="200" class="center pb-2"/>
+                    <p class="custom-text1 text-center">
+                        Oyun kütüphanesinden<br>
                         dilediğiniz oyunu seçin 
                     </p>
                 </div>
 
-                <div class="col-md-4">
-                    <img src="/images/star.png" width="200" height="200" class="center"/>
-                    <p class="paragraph text-white text-center">
-                        Sınırsız kampanya
+                <div class="game-card col-md-4">
+                    <img src="/images/star.png" width="200" height="200" class="center pb-2"/>
+                    <p class="custom-text1 text-center">
+                        Sınırsız kampanya<br>
                         ve kupon oluşturun
                     </p>
                 </div>
 
-                <div class="col-md-4">
-                    <img src="/images/cup.png" width="200" height="200" class="center"/>
-                    <p class="paragraph text-white text-center">
-                        Müşteri etkileşiminizi ve
+                <div class="game-card col-md-4">
+                    <img src="/images/cup.png" width="200" height="200" class="center pb-2"/>
+                    <p class="custom-text1 text-center">
+                        Müşteri etkileşiminizi ve<br>
                         satışlarınızı arttırın
                     </p>
                 </div>
-                <button type="button" onclick="GoAllSarenteGames()" class="btn sarente-games-button game-button mb-5"><img src="/images/game-button.png" class="center" height="68"/></button>
+                <a href="/urunler/sarentegames/games.html" class="btn game-button sarente-games-button p-0 mb-5"><img src="/images/game-button.png" height="68"/></a>
             </div>
         </div>
 
@@ -257,46 +304,46 @@
                 <div class="demo-games">
 
                     <div class="game row d-flex justify-content-center align-items-center px-5">
-                        <div class="col-md-5">
-                            <img src="/images/gamesimg.png"/>
+                        <div class="col-md-5 pe-md-5">
+                            <img src="/images/try-games-1.png" class="img-fluid"/>
                         </div>
                         <div class="col-md-5">
-                            <img src="/images/thunderpatroller.png"/>
-                            <h4 class="textw-700 text-white">Thunder Patroller</h4>
-                            <h1 class="title-sm text-white my-5">Uzay mekiğinizle
+                            <img src="/images/thunder-patroller-icon2.png" class="img-fluid"/>
+                            <h4 class="custom-game-title">Thunder Patroller</h4>
+                            <h1 class="custom-game-desc my-5">Uzay mekiğinizle
                                 zamana karşı yarışın!
                             </h1>
                             <div class="platform-badges d-flex my-3">
-                                <h3><span class="badge bg-info me-2">WEB</span></h3>
-                                <h3><span class="badge bg-info">MOBILE</span></h3>
+                                <a href="https://thunderpatroller.gameontech.co.uk/mobil/"><h3><span class="badge me-2">WEB</span></h3></a>
+                                <a href="https://thunderpatroller.gameontech.co.uk/mobil/"><h3><span class="badge me-2">MOBILE</span></h3></a>
                             </div>
-                            <p class="paragraph text-white">Uzay mekiğinizle hediye paketlerini vurun ve
-                                sandıktaki indirim koduyla müşterilerinizle
+                            <p class="paragraph text-white">Uzay mekiğinizle hediye paketlerini vurun ve<br>
+                                sandıktaki indirim koduyla müşterilerinizle<br>
                                 etkileşiminizi ve satışlarınızı arttırın.
                             </p>
-                            <button type="button" class="btn sarente-games-button p-0"><img src="/images/try-it-now.png" height="68"/></button>
+                            <a href="https://thunderpatroller.gameontech.co.uk/mobil/" class="btn sarente-games-button p-0"><img src="/images/try-it-now.png" height="68"/></a>
                         </div>
                     </div>
 
                     <div class="game row d-flex justify-content-center align-items-center px-5">
-                        <div class="col-md-5">
-                            <img src="/images/gamesimg.png"/>
+                        <div class="col-md-5 pe-md-5">
+                            <img src="/images/try-games-2.png" class="img-fluid"/>
                         </div>
                         <div class="col-md-5">
-                            <img src="/images/thunderpatroller.png"/>
-                            <h4 class="textw-700 text-white">Thunder Patroller</h4>
-                            <h1 class="title-sm text-white my-5">Uzay mekiğinizle
+                            <img src="/images/slinger-monkey-icon.png" class="img-fluid"/>
+                            <h4 class="custom-game-title">Slinger Monkey</h4>
+                            <h1 class="custom-game-desc my-5">Uzay mekiğinizle
                                 zamana karşı yarışın!
                             </h1>
                             <div class="platform-badges d-flex my-3">
-                                <h3><span class="badge bg-info me-2">WEB</span></h3>
-                                <h3><span class="badge bg-info">MOBILE</span></h3>
+                                <a href="https://games.gameontech.co.uk/SlingerMonkey/"><h3><span class="badge me-2">WEB</span></h3></a>
+                                <a href="https://games.gameontech.co.uk/SlingerMonkey/"><h3><span class="badge me-2">MOBILE</span></h3></a>
                             </div>
                             <p class="paragraph text-white">Uzay mekiğinizle hediye paketlerini vurun ve
                                 sandıktaki indirim koduyla müşterilerinizle
                                 etkileşiminizi ve satışlarınızı arttırın.
                             </p>
-                            <button type="button" class="btn sarente-games-button p-0"><img src="/images/try-it-now.png" height="68"/></button>
+                            <a href="https://games.gameontech.co.uk/SlingerMonkey/" class="btn sarente-games-button p-0"><img src="/images/try-it-now.png" height="68"/></a>
                         </div>
                     </div>
 
@@ -305,7 +352,7 @@
                     <h1 class="sarente-games-title text-white my-5 text-center">Firmanıza Özel Oyun<br>
                         İhtiyacınız mı var?
                     </h1>
-                    <button type="button" onclick="GoSarenteGamesContactForm()" class="btn center sarente-games-button pb-5"><img src="/images/get-contact.png" height="68"/></button>
+                    <button type="button" onclick="GoSarenteGamesContactForm()" class="btn center sarente-games-button p-0 pb-5"><img src="/images/get-contact.png" height="68"/></button>
                 </div>
             </div>
 

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sarente Games</title>
+    
+        <style>
+            html, body{ height: 100%; }
+            body, html {
+                background: #2661D7!important;
+                overflow-x: hidden!important;
+            }
+            .sarentegames-logo{ position: relative; top: 40px; }
+            .sarente-games-maintitle {
+                color: #FFF!important;
+                text-align: center!important;
+                font-family: Outfit!important;
+                font-size: 60px!important;
+                font-style: normal!important;
+                font-weight: 700!important;
+                line-height: 65px!important;
+            }
+            .sarente-games-button{ transition: all 0.2s ease-in-out!important; }
+            .sarente-games-button:hover{ transform: scale(0.976)!important; }
+            .sarente-games-title1 {
+                color: #FFF;
+                text-align: center;
+                font-family: Outfit;
+                font-size: 60px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 65px;
+            }
+            .sarente-games-title2 {
+                color: #FFF!important;
+                text-align: center!important;
+                font-family: Outfit!important;
+                font-size: 24px!important;
+                font-style: normal!important;
+                font-weight: 700!important;
+                line-height: normal!important;
+            }
+            .games-footer{
+                height: 200px;
+                border-radius: 10px;
+                background: #316CE0;
+            }
+            .games-footer .footer-social-media{
+                border-radius: 12px;
+                box-shadow: 3px 5px 0px 0px rgba(0, 0, 0, 0.25);
+                display: inline-block;
+                width: 50px!important;
+                height: 50px!important;
+                text-decoration: none;
+                transition: all 0.3s ease-in-out;
+            }
+            .games-footer .footer-social-media i:hover{
+                border: 3px solid rgba(0, 0, 0, 0.25);
+                border-radius: 12px;
+            }
+            .footer-social-media i{
+                color: #172b838f;
+                font-size: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+            .x{ background: #82E5AE; }
+            .instagram{ background: #FFC303; }
+            .linkedin{ background: #9AC1E2; }
+            .games-footer .newsletter-title{
+                color: #FFF;
+                font-family: Outfit;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 34px;
+            }
+            .games-footer .newsletter{
+                color: #7EC5FC!important;
+                font-family: Outfit!important;
+                font-size: 24px!important;
+                font-style: normal!important;
+                font-weight: 500!important;
+                line-height: normal!important;
+                border-radius: 8px!important;
+                border: 4px solid #3875FF!important;
+                background: #2F6CEB!important;
+            }
+            .games-footer .newsletter::placeholder {
+                color: #7EC5FC!important;
+                opacity: 1;
+            }
+            .platform-badges .badge{ color: #9CF8F6!important; background: #316CE0; }
+
+            .input-container {
+                position: relative;
+                overflow: hidden!important;
+            }
+            .input-container input {
+                padding-right: 40px;
+                height: 50px;
+            }
+            .input-container button {
+                position: absolute;
+                font-size: 13px;
+                top: 0;
+                right: 0;
+                width: 145px;
+                background: #fff!important;
+                color: #316CE0!important;
+                border-radius: 0;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            .sarente-all-games .platform-badges .badge{ transition: all 0.2s ease-in-out!important; }
+            .sarente-all-games .platform-badges .badge:hover{
+                background: #0000002c;
+            }
+
+            @media screen and (max-width: 768px) { 
+                .sarentegames-logo img{
+                    display: block!important;
+                    margin-right: auto!important;
+                    margin-left: auto!important;
+                }
+            }
+
+        </style>
+
+        <!-- IMPORT FROM PATHS -->
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="/css/main.css"/>
+        <link rel="stylesheet" href="/css/animations.css"/>
+        <script src="/js/main.js"></script>
+
+         <!-- IMPORT FROM LINKS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+    
+<body>
+
+<div class="sarente-games">
+    <div class="container-fluid p-5">
+
+        <div class="sarentegames-logo mb-5">
+            <a href="/urunler/sarentegames/"><img src="/images/sarente-games.svg"/></a>
+        </div>
+
+        <div class="sarente-all-games fade-to-visible">
+            <div class="row d-flex justify-content-center align-items-center">
+                <h1 class="sarente-games-maintitle text-center margin-y">Tüm Oyunlar</h1>
+
+                <div class="col-md-2 m-5">
+                    <img src="/images/sarentegames/dino-catch.png" class="center" width="200" height="200"/>
+                    <h1 class="sarente-games-title2 mt-2 text-center mt-3">Dino Catch</h1>
+                    <div class="platform-badges d-flex justify-content-center">
+                        <a href=""><h3><span class="badge me-2">WEB</span></h3></a>
+                        <a href=""><h3><span class="badge me-2">MOBILE</span></h3></a>
+                    </div>
+                </div>
+
+                <div class="col-md-2 m-5">
+                    <img src="/images/sarentegames/gift-deck.png" class="center" width="200" height="200"/>
+                    <h1 class="sarente-games-title2 mt-2 text-center mt-3">Gift Deck</h1>
+                    <div class="platform-badges d-flex justify-content-center">
+                        <a href=""><h3><span class="badge me-2">WEB</span></h3></a>
+                        <a href=""><h3><span class="badge me-2">MOBILE</span></h3></a>
+                    </div>
+                </div>
+
+                <div class="col-md-2 m-5">
+                    <img src="/images/sarentegames/slinger-monkey.png" class="center" width="200" height="200"/>
+                    <h1 class="sarente-games-title2 mt-2 text-center mt-3">Slinger Monkey</h1>
+                    <div class="platform-badges d-flex justify-content-center">
+                        <a href=""><h3><span class="badge me-2">WEB</span></h3></a>
+                        <a href=""><h3><span class="badge me-2">MOBILE</span></h3></a>
+                    </div>
+                </div>
+
+                <div class="col-md-2 m-5">
+                    <img src="/images/sarentegames/big-fish.png" class="center" width="200" height="200"/>
+                    <h1 class="sarente-games-title2 mt-2 text-center mt-3">Big Fish</h1>
+                    <div class="platform-badges d-flex justify-content-center">
+                        <a href=""><h3><span class="badge me-2">WEB</span></h3></a>
+                        <a href=""><h3><span class="badge me-2">MOBILE</span></h3></a>
+                    </div>
+                </div>
+
+                <div class="col-md-2 m-5">
+                    <img src="/images/sarentegames/thunder-patroller.png" class="center" width="200" height="200"/>
+                    <h1 class="sarente-games-title2 mt-2 text-center mt-3">Thunder Patroller</h1>
+                    <div class="platform-badges d-flex justify-content-center">
+                        <a href=""><h3><span class="badge me-2">WEB</span></h3></a>
+                        <a href=""><h3><span class="badge me-2">MOBILE</span></h3></a>
+                    </div>
+                </div>
+
+                <div class="col-md-2 m-5">
+                    <img src="/images/sarentegames/thunder-patroller-plus.png" class="center" width="200" height="200"/>
+                    <h1 class="sarente-games-title2 mt-2 text-center mt-3">Thunder Patroller Plus</h1>
+                    <div class="platform-badges d-flex justify-content-center">
+                        <a href=""><h3><span class="badge me-2">WEB</span></h3></a>
+                        <a href=""><h3><span class="badge me-2">MOBILE</span></h3></a>
+                    </div>
+                </div>
+
+                <div class="col-md-2 m-5">
+                    <img src="/images/sarentegames/crazy-words.png" class="center" width="200" height="200"/>
+                    <h1 class="sarente-games-title2 mt-2 text-center mt-3">Crazy Words</h1>
+                    <div class="platform-badges d-flex justify-content-center">
+                        <a href=""><h3><span class="badge me-2">WEB</span></h3></a>
+                        <a href=""><h3><span class="badge me-2">MOBILE</span></h3></a>
+                    </div>
+                </div>
+
+                <div class="col-md-2 m-5">
+                    <img src="/images/sarentegames/duckduck.png" class="center" width="200" height="200"/>
+                    <h1 class="sarente-games-title2 mt-2 text-center mt-3">Duck Duck</h1>
+                    <div class="platform-badges d-flex justify-content-center">
+                        <a href=""><h3><span class="badge me-2">WEB</span></h3></a>
+                        <a href=""><h3><span class="badge me-2">MOBILE</span></h3></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="center pt-5 my-5">
+            <h1 class="sarente-games-title1 text-white my-5 text-center">Firmanıza Özel Oyun<br>
+                İhtiyacınız mı var?
+            </h1>
+            <button type="button" onclick="GoSarenteGamesContactForm()" class="btn center sarente-games-button mb-5"><img src="/images/get-contact.png" height="68"/></button>
+        </div>
+
+        <div class="games-footer row d-flex justify-content-center align-items-center">
+            <div class="col-md-2">
+                <h1 class="newsletter-title">Bültenimize
+                    abone olun:
+                </h1>
+            </div>
+
+            <div class="col-md-4 input-container">
+                <input class="form-control newsletter" type="text" placeholder="eposta@sarente.com">
+                <button type="button" class="btn h-100 bg-white text-primary textw-800"><img src="/images/sub.png"/>ABONE OL</button>
+            </div>
+            <div class="col-md-3">
+                <a href="" class="footer-social-media x"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="" class="footer-social-media linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="" class="footer-social-media instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="games-footer-end d-flex justify-content-between text-white mx-5 py-5">
+            <p class="paragraph">Entegre Yönetim Sistemi Politikası</p>
+            <p class="paragraph text-end">© 2023 •<a href="/"><img src="/images/Sarente_Logo_white.png" class="mx-1" width="72" height="16" style="
+                position: relative;
+                bottom: 0.18rem;
+            "/></a>tarafından <i class="fa-solid fa-heart text-danger"></i> ile tasarlandı</p>
+        </div>
+    </div>
+</div>
+
+    
+</body>
+</html>
