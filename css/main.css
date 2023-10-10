@@ -79,8 +79,10 @@
 }
 .sarente-nav-link{
     color: #A4A4A4!important;
+    font-family: Manrope!important;
+    color: #A4A4A4!important;
     font-size: 14px!important;
-    font-weight: 500!important;
+    font-weight: 600!important;
     line-height: normal!important;
     text-decoration: none!important;
 }
@@ -102,7 +104,15 @@
     display: none!important; /* Hide language selector dropdown icon */
 }
 .language-menu{
-    min-width: 60px!important
+    min-width: 60px!important;
+}
+.language-selector span{
+    color: #A4A4A4!important;
+    font-family: Manrope!important;
+    font-size: 14px!important;
+    font-style: normal!important;
+    font-weight: 600!important;
+    line-height: normal!important;
 }
 .language-icon{ margin-right: -4px; margin-top: -2px; }
 /* NAVBAR CSS END */
