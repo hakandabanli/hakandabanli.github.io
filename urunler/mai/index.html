@@ -110,17 +110,25 @@
             }
             .mai-newsletter::placeholder{ color: #FFF!important; font-size: 13px!important; }
             .header-gradient{
-              background: linear-gradient(180deg, rgba(13, 36, 70, 0.00) 0%, #0D2446 100%);
+              background: linear-gradient(180deg, rgba(13, 36, 70, 0.00) 0%, #0D2446 75%);
               width: 100%;
               height: 50%;
               position: relative;
-              bottom: 5%!important;
+              bottom: 0!important;
               overflow: hidden!important;
             }
-            .language-menu{ background: #0d2446!important; }
-            .dropdown-item:hover{
-              background-color: #6f3ef0!important;
+            .language-selector .dropdown-menu { background-color: #6f3ef0!important; }
+            .language-selector .dropdown-item:hover{ background: #00000034!important; }
+
+            .language-selector-mobile .dropdown-menu { background-color: #6f3ef0!important; }
+            .language-selector-mobile .dropdown-item:hover{ background: #00000034!important; }
+
+            .dropdown-menu .dropdown-item:hover{ border-radius: 5px!important; }
+            .dropdown:hover .dropdown-menu {
+              display: block!important;
+              margin-top: 0!important;
             }
+
             .item { width: auto!important; }
             .customer-experience-items .item .item-img { width: 180px; height: 180px; }
             .mai-slider .slick-dots{

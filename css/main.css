@@ -97,14 +97,39 @@
 #nav-contact-button-mobile{
     border-radius: var(--sarente-border-radius);
 }
+
+/* LANGUAGE SELECTOR DROPDOWN */
 .dropdown-toggle{
     border-color: transparent!important;
 }
 .dropdown-toggle::after{
-    display: none!important; /* Hide language selector dropdown icon */
+    display: none!important; /* Hide language selector default dropdown icon */
 }
 .language-menu{
     min-width: 60px!important;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: rgba(241, 241, 241, 1)!important;
+}
+.language-selector .dropdown-menu {
+    padding: 10px 5px 10px 5px!important;
+    border-radius: 12px!important;
+    border: 0!important;
+    box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.10)!important;
+}
+.language-selector .dropdown-menu .dropdown-item:hover{ border-radius: 5px!important; }
+.language-selector .dropdown:hover .dropdown-menu {
+    display: block!important;
+    margin-top: 0!important;
+}
+.language-selector .dropdown-menu .dropdown-item {
+    color: #A4A4A4!important;
+    font-family: Manrope!important;
+    font-size: 14px!important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    line-height: normal!important;
+    padding: 8px!important;
 }
 .language-selector span{
     color: #A4A4A4!important;
@@ -114,7 +139,40 @@
     font-weight: 600!important;
     line-height: normal!important;
 }
+
+.language-selector-mobile .dropdown-menu {
+    background: #FFFFFF;
+    padding: 10px 5px 10px 5px!important;
+    border-radius: 12px!important;
+    border: 0!important;
+    box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.10)!important;
+}
+.language-selector-mobile .dropdown-menu .dropdown-item:hover{ border-radius: 5px!important; }
+.language-selector-mobile .dropdown:hover .dropdown-menu {
+    display: block!important;
+    margin-top: 0!important;
+}
+.language-selector-mobile .dropdown-menu .dropdown-item {
+    color: #A4A4A4!important;
+    font-family: Manrope!important;
+    font-size: 14px!important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    line-height: normal!important;
+    padding: 8px!important;
+}
+.language-selector-mobile span{
+    color: #A4A4A4!important;
+    font-family: Manrope!important;
+    font-size: 14px!important;
+    font-style: normal!important;
+    font-weight: 600!important;
+    line-height: normal!important;
+}
+
 .language-icon{ margin-right: -4px; margin-top: -2px; }
+/* LANGUAGE SELECTOR DROPDOWN */
+
 /* NAVBAR CSS END */
 
 /* MAIN SLIDER CSS START */
