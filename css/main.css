@@ -109,7 +109,7 @@
     min-width: 60px!important;
 }
 .dropdown-item:focus, .dropdown-item:hover {
-    background-color: rgba(241, 241, 241, 1)!important;
+    background-color: rgba(245, 245, 245, 1)!important;
 }
 .language-selector .dropdown-menu {
     padding: 10px 5px 10px 5px!important;
@@ -117,7 +117,7 @@
     border: 0!important;
     box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.10)!important;
 }
-.language-selector .dropdown-menu .dropdown-item:hover{ border-radius: 5px!important; }
+.language-selector .dropdown-menu .dropdown-item:hover{ border-radius: 10px!important; }
 .language-selector .dropdown:hover .dropdown-menu {
     display: block!important;
     margin-top: 0!important;
@@ -244,13 +244,13 @@
 /* FOOTER SECTION CSS START */
 .social-media{
     background: #F4F4F4;
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     transition: all 0.3s ease-in-out;
 }
 .social-media:hover{ background: #E4E4E4; }
-.social-media i{ color: #777!important; font-size: 18px; }
+.social-media i{ color: #777!important; font-size: 20px; writing-mode: vertical-lr; }
 .newsletter-input { 
     border-radius: 16px!important;
     border: 1px solid #A4A4A4!important;
