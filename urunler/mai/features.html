@@ -29,20 +29,21 @@
                 width: 150px;
                 height: 50px;
                 color: #FFF!important;
+                border: 0!important;
                 border-radius: 24px!important;
-                border: 1px solid #B183EF!important;
-                background: linear-gradient(180deg, #6F3EF1 0%, #9D69F1 100%)!important;
-                box-shadow: 2px 0px 10px 5px #6647A5, 0px 30px 20px 0px #6E3DF0 inset!important;
+                background: linear-gradient(113deg, #29D7FF 18.07%, #3CBFFF 27.42%, #7083FF 46.12%, #C123FF 73.51%, #E000FF 83.53%)!important;
+                box-shadow: 2px 0px 10px 5px rgba(224, 1, 255, 0.30)!important;
                 transition: all 0.3s ease-in-out!important;
+                
             }
             .mai-button:hover{
-                box-shadow: 2px 0px 10px 6px #7351b8, 0px 30px 20px 0px #7847ff inset!important;
+              box-shadow: 2px 0px 10px 3px #8669ff!important;
             }
             .purple-rainbow-text{
-                background: linear-gradient(180deg, #7C61FF 0%, #3B13FD 43.52%);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+              background: var(--gradient, linear-gradient(134deg, #29D7FF 3.36%, #3CBFFF 11.17%, #7083FF 26.8%, #C123FF 49.69%, #E000FF 58.07%));
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
             }
             .mai-nav-link{
               color: #FFF!important;
@@ -53,20 +54,7 @@
               line-height: normal!important;
               transition: all 0.3s ease-in-out!important;
             }
-            .mai-nav-link:hover{
-              background: linear-gradient(180deg, #6F3EF1 0%, #9D69F1 43.52%);
-              background-clip: text;
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-            }
-            .mai-paragraph{
-                color: #BFD7F1!important;
-                font-family: Manrope!important;
-                font-size: 15px!important;
-                font-style: normal!important;
-                font-weight: 400!important;
-                line-height: normal!important;
-            }
+            .mai-nav-link:hover{ color: #FF0697!important; }
             .mai-title{
                 leading-trim: both!important;
                 text-edge: cap!important;
@@ -85,14 +73,32 @@
               font-weight: 500!important;
               line-height: normal!important;
             }
+            .feature-card-title{
+              color: #FFF!important;
+              text-align: center!important;
+              font-family: Manrope!important;
+              font-size: 20px!important;
+              font-style: normal!important;
+              font-weight: 500!important;
+              line-height: normal!important;
+            }
+            .feature-card-subtitle{
+              color: #FFF!important;
+              font-family: Manrope!important;
+              font-size: 14px!important;
+              font-style: normal!important;
+              font-weight: 400!important;
+              line-height: 1.25!important;
+            }
             .mai-slider{
               position: relative!important;
               right: 9%!important;
             }
             .have-any-questions{
+              max-width: 1440px;
               height: 500px;
               border-radius: 60px;
-              border: 2px solid #B183EF;
+              border: 2px solid #c221ff;
               margin-left: auto;
               margin-right: auto;
               padding: 3rem;
@@ -113,22 +119,43 @@
               height: 50px!important;
               color: #FFF!important;
               border-radius: 60px!important;
-              border: 2px solid #B183EF!important;
+              border: 2px solid #c221ff!important;
               background: transparent!important;
             }
             .mai-newsletter::placeholder{ color: #FFF!important; font-size: 13px!important; }
+            .mai-features{ max-width: 1440px; }
             .mai-feature-card{
-              padding: 3rem!important;
+              padding-top: 3rem!important;
+              padding-bottom: 3rem!important;
               background: transparent!important;
               border-radius: 40px;
-              border: 2px solid #B183EF;
+              border: 2px solid #c221ff;
               transition: all 0.3s ease-in-out!important;
             }
-            .mai-feature-card img{ width: 100px; height: 100px; transition: all 0.2s ease-in-out!important; }
-            .mai-feature-card:hover img{ transform: scale(1.1); }
+            .mai-feature-card img{ 
+              width: 100px;
+              height: 100px;
+              object-fit: contain;
+              transition: all 0.2s ease-in-out!important; 
+            }
+            .mai-feature-card:hover{ background: #482f8fcc!important; cursor: pointer; }
+            .mai-feature-card:hover img{ transform: scale(1.08); }
             .language-menu{ background: #0d2446!important; }
             .dropdown-item:hover{
               background-color: #6f3ef0!important;
+            }
+            .text-pink{ color: #E000FF!important; }
+
+            .language-selector .dropdown-menu { background-color: #6f3ef0!important; }
+            .language-selector .dropdown-item:hover{ background: #00000034!important; }
+
+            .language-selector-mobile .dropdown-menu { background-color: #6f3ef0!important; }
+            .language-selector-mobile .dropdown-item:hover{ background: #00000034!important; }
+
+            .dropdown-menu .dropdown-item:hover{ border-radius: 5px!important; }
+            .dropdown:hover .dropdown-menu {
+              display: block!important;
+              margin-top: 0!important;
             }
 
 
@@ -136,7 +163,7 @@
             @media screen and (min-width: 992px) { 
                 .mai-nav-link{ padding-left: 3rem!important; padding-right: 3rem!important; }
             }
-            @media screen and (min-width: 992px) { 
+            @media screen and (min-width: 768px) { 
                 .mai-feature-card{
                   width: 200px!important;
                   height: 200px!important;
@@ -175,7 +202,7 @@
                 <a class="nav-link mai-nav-link" href="/urunler/mai/">Anasayfa</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link mai-nav-link" href="#">Neden MAI</a>
+                <a class="nav-link mai-nav-link" href="#">Neden ZUZZUU</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link mai-nav-link" href="/urunler/mai/features.html">Özellikler</a>
@@ -236,298 +263,243 @@
         <div class="row d-flex justify-content-center text-center">
             <div class="col-md-6">
                 <h1 class="mai-title purple-rainbow-text">
-                  MAI ile
+                  ZUZZUU ile
                 </h1>
                 <h1 class="mai-title text-white">Süreçlerinizi Yeniden Tasarlayın!</h1>
-                <h5 class="text-white">ile Buluşuyor!</h5>
-                <p class="mai-paragraph">
-                  MAI’nin birbirinden farklı özellikleri ile tüm süreçlerinizi yeniden tasarlayın, etkileşiminizi ve satışlarınızı arttırın.
+                <p class="feature-card-title">
+                  ZUZZUU'nun birbirinden farklı özellikleri ile tüm süreçlerinizi yeniden tasarlayın, etkileşiminizi ve satışlarınızı arttırın.
                 </p>
             </div>
         </div>
 
-        <div class="mai-features py-3">
+        <div class="mai-features center py-3">
           <div class="row d-flex justify-content-center align-items-center text-center">
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/1.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Multi Channel Engagement
-                  <br><span class="mai-subtitle">(Web&Mobile)</span>
-                </p>
+                <p class="feature-card-title padding-from-top mb-0 mb-0">Çoklu Kanal Etkileşimi</p>
+                <p class="feature-card-subtitle">(Web&Mobile)</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/2.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Onboarding
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Müşteri Onboarding</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/3.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Müşteri Hedef Sistemi</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/4.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Müşteri Kulüpleri</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/5.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Avatarlar</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/6.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Ödüllendirme Sistemi</p>
+                <p class="feature-card-subtitle">(XP’ler, Rozetler, Madalyalar)</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/7.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Liderlik Tablosu</p>
+                <p class="feature-card-subtitle">(Müşteri Segmentasyonu ile)</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/8.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Tekil Cüzdan Sistemi</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/9.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Müşteri Ödüllendirme</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/10.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Oyunlarla Etkileşim</p>
+                <p class="feature-card-subtitle">(Oyun Puanlarını XP’ye dönüştürme)</p>
               </div>
             </div>
             
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/11.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Gerçek Zamanlı Veri Takibi</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/12.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Mobil Uygulamalar için Anlık Teklifler</p>
+                <p class="feature-card-subtitle">(Opsiyonel)</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/13.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Çoklu Bildirim Desteği</p>
+                <p class="feature-card-subtitle">(Push, Email)</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/14.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Sınırsız Yetkili Atayabilme</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/15.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Sınırsız Domain<span class="text-pink">*</span></p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/16.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Çoklu Marka Desteği<span class="text-pink">*</span></p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/17.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Çoklu Ülke Desteği<span class="text-pink">*</span></p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/18.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Sınırsız Müşteri Tanımlayabilme</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/19.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Sınırsız Ürün Tanımlayabilme</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/20.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Sınırsız Kategori/Alt Kategori Oluşturma</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/21.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Sınırsız Senaryo Oluşturma</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/22.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Zaman Bazlı Senaryo Oluşturma</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/23.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Sınırsız Kupon Tanımlayabilme</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/24.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Kişiselleştirilebilir Senaryo Parametreleri</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/25.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Müşteri Bazlı Teklif Tanımlayabilme</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/26.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Segment Bazlı Teklif Tanımlayabilme</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/27.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Kişiselleştirilmiş Teklif Yönetim Sistemi</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/28.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">Güvenlik için Yetkilendirme Yönetimi</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/29.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">API, SDK ve Web View ile Kolay Entegrasyon</p>
               </div>
             </div>
 
-            <div class="mai-feature-card col-md-2 mx-4 margin-y">
+            <div class="mai-feature-card col-md-2 mx-4 margin-y margin-y-mobile">
               <img src="/images/mai/features/30.png" class="card-img-top">
               <div class="card-body">
-                <p class="mai-paragraph padding-from-top">
-                  Customer Tasks/ Goal System
-                </p>
+                <p class="feature-card-title padding-from-top mb-0">BI için Ham Data Desteği</p>
+                <p class="feature-card-subtitle">(MS Power BI, Tableau, Oracle BI, Qlik, vb.)</p>
               </div>
             </div>
 
           </div>
         </div>
 
-        <div class="have-any-questions margin-y mx-md-5">
+        <div class="have-any-questions center margin-y margin-y-mobile">
           <div class="row">
             <div class="col-md-8">
-              <img src="/images/sarente-icon.png" class="mb-5"/>
-              <h1 class="mai-title textw-600 text-light">Sorunuz mu var?</h1>
+              <img src="/images/zuzzuu-logo.png" class="mb-5" height="60"/>
+              <h1 class="mai-title textw-600 text-light mt-3">Sorunuz mu var?</h1>
               <p class="paragraph text-light my-4">Soru sorun ya da daha detaylı bilgi için randevu oluşturun!
                 Sizinle hızlı bir şekilde iletişime geçelim.</p>
               <button type="button" onclick="GoContactForm()" class="btn mai-button">İletişime Geçin</button>
@@ -591,15 +563,18 @@
                   <input id="newsletter1" type="text" class="form-control mai-newsletter mb-3" placeholder="Eposta Adresiniz">
                   <button class="btn newsletter-submit-btn" type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <g clip-path="url(#clip0_242_166)">
-                        <path d="M11 13L12.5345 16.9899C13.5893 19.7326 14.1168 21.1039 14.825 21.4489C15.4375 21.7472 16.1598 21.7132 16.7415 21.3586C17.4142 20.9486 17.8104 19.5338 18.6027 16.7041L21.466 6.47824C21.9677 4.68672 22.2185 3.79096 21.9857 3.17628C21.7827 2.64035 21.3596 2.21724 20.8237 2.01427C20.209 1.78147 19.3133 2.03228 17.5217 2.53391L7.29584 5.39716C4.46617 6.18947 3.05133 6.58563 2.64136 7.25828C2.28678 7.84005 2.25275 8.56231 2.55106 9.17484C2.89597 9.88306 4.26729 10.4105 7.00993 11.4654L11 13ZM11 13L13.5 10.5" stroke="url(#paint0_linear_242_166)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <g clip-path="url(#clip0_428_1002)">
+                        <path d="M11 13L12.5345 16.9899C13.5893 19.7326 14.1168 21.1039 14.825 21.4489C15.4375 21.7472 16.1598 21.7132 16.7415 21.3586C17.4142 20.9486 17.8104 19.5338 18.6027 16.7041L21.466 6.47824C21.9677 4.68672 22.2185 3.79096 21.9857 3.17628C21.7827 2.64035 21.3596 2.21724 20.8237 2.01427C20.209 1.78147 19.3133 2.03228 17.5217 2.53391L7.29584 5.39716C4.46617 6.18947 3.05133 6.58563 2.64136 7.25828C2.28678 7.84005 2.25275 8.56231 2.55106 9.17484C2.89597 9.88306 4.26729 10.4105 7.00993 11.4654L11 13ZM11 13L13.5 10.5" stroke="url(#paint0_linear_428_1002)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                       </g>
                       <defs>
-                        <linearGradient id="paint0_linear_242_166" x1="10.5" y1="1" x2="10.5" y2="26" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#B183F0"/>
-                          <stop offset="1" stop-color="#6F3DE3"/>
+                        <linearGradient id="paint0_linear_428_1002" x1="0.570854" y1="0.0739528" x2="14.6619" y2="13.8931" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#29D7FF"/>
+                          <stop offset="0.14" stop-color="#3CBFFF"/>
+                          <stop offset="0.42" stop-color="#7083FF"/>
+                          <stop offset="0.83" stop-color="#C123FF"/>
+                          <stop offset="0.98" stop-color="#E000FF"/>
                         </linearGradient>
-                        <clipPath id="clip0_242_166">
+                        <clipPath id="clip0_428_1002">
                           <rect width="24" height="24" fill="white"/>
                         </clipPath>
                       </defs>
