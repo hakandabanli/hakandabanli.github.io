@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ZUZZUU</title>
+
+        <style>
+            html, body{ background: #0D2446!important; }
+            .zuzzuu-text{
+                color: #FFF;
+                font-family: Manrope;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            .zuzzuu-text-mini{
+                color: #FFF;
+                font-family: Manrope;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            .zuzzuu-navbar{ background: transparent!important; border: 0!important; }
+            .zuzzuu-navbar-toggler{ background: linear-gradient(180deg, #6F3EF1 0%, #9D69F1 100%)!important; }
+            .zuzzuu-button{
+                width: 150px;
+                height: 50px;
+                color: #FFF!important;
+                border: 0!important;
+                border-radius: 24px!important;
+                background: linear-gradient(113deg, #29D7FF 18.07%, #3CBFFF 27.42%, #7083FF 46.12%, #C123FF 73.51%, #E000FF 83.53%)!important;
+                box-shadow: 2px 0px 10px 5px rgba(224, 1, 255, 0.30)!important;
+                transition: all 0.3s ease-in-out!important;
+                
+            }
+            .zuzzuu-button:hover{
+              box-shadow: 2px 0px 10px 3px #8669ff!important;
+            }
+            .purple-rainbow-text{
+              background: var(--gradient, linear-gradient(134deg, #29D7FF 3.36%, #3CBFFF 11.17%, #7083FF 26.8%, #C123FF 49.69%, #E000FF 58.07%));
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+            .zuzzuu-nav-link{
+                color: #FFF!important;
+                font-family: Manrope!important;
+                font-size: 14px!important;
+                font-style: normal!important;
+                font-weight: 600!important;
+                line-height: normal!important;
+                transition: all 0.3s ease-in-out!important;
+            }
+            .zuzzuu-nav-link:hover{ color: #FF0697!important; }
+            .zuzzuu-paragraph{
+                color: #BFD7F1!important;
+                font-family: Manrope!important;
+                font-size: 15px!important;
+                font-style: normal!important;
+                font-weight: 400!important;
+                line-height: normal!important;
+            }
+            .zuzzuu-title{
+                leading-trim: both!important;
+                text-edge: cap!important;
+                font-family: Manrope!important;
+                font-size: 52px!important;
+                font-style: normal!important;
+                font-weight: 600!important;
+                line-height: 50px!important;
+                letter-spacing: -2.6px!important;
+            }
+            .zuzzuu-header{
+              background: url('/images/zuzzuu/zuzzuu-header.png'), 50% / cover no-repeat;
+              background-size: cover;
+              position: relative;
+              height: 600px;
+            }
+            .zuzzuu-header-gradient{
+              background: linear-gradient(180deg, rgba(13, 36, 70, 0.00) 0%, #0D2446 100%);
+              width: 100%;
+              height: 300px;
+              position: absolute;
+              bottom: 0!important;
+            }
+            .have-any-questions{
+              border-radius: 60px;
+              border: 2px solid #B183EF;
+              margin-left: auto;
+              margin-right: auto;
+              padding: 3rem;
+            }
+            .have-any-questions input, textarea{
+              color: #D9D9D9!important;
+              border-radius: 16px!important;
+              border: 2px solid #B183EF!important;
+              background: transparent!important;
+            }
+            .have-any-questions input::placeholder{
+              color: #D9D9D9!important;
+            }
+            .have-any-questions textarea::placeholder{
+              color: #D9D9D9!important;
+            }
+            .zuzzuu-newsletter{
+              height: 50px!important;
+              color: #FFF!important;
+              border-radius: 60px!important;
+              border: 2px solid #B183EF!important;
+              background: transparent!important;
+            }
+            .zuzzuu-newsletter::placeholder{ color: #FFF!important; font-size: 13px!important; }
+            .language-selector .dropdown-menu { background-color: #6f3ef0!important; }
+            .language-selector .dropdown-item:hover{ background: #00000034!important; }
+
+            .language-selector-mobile .dropdown-menu { background-color: #6f3ef0!important; }
+            .language-selector-mobile .dropdown-item:hover{ background: #00000034!important; }
+
+            .dropdown-menu .dropdown-item:hover{ border-radius: 5px!important; }
+            .dropdown:hover .dropdown-menu {
+              display: block!important;
+              margin-top: 0!important;
+            }
+
+            .item { width: auto!important; }
+            .customer-experience-items .item .item-img { width: 180px; height: 180px; }
+            .zuzzuu-slider .slick-dots{
+              position: absolute!important;
+              bottom: 75%!important;
+              left: 5%!important;
+            }
+            .zuzzuu-slider .slick-dots li.slick-active button:before {
+                color: #FF0697!important;
+            }
+            .zuzzuu-slider .slick-dots li{ margin-right: 1rem!important; }
+            .slick-slider .slick-slide {
+                padding: 0 20px!important;
+            }
+            .slick-dots li button:before {
+              opacity: 0.6!important;
+              color: #F4F4F4!important;
+            }
+            .zuzzuu-slider .custom-title{
+              color: #FFF;
+              font-family: Manrope;
+              font-size: 40px;
+              font-style: normal;
+              font-weight: 800;
+              line-height: 54px;
+              letter-spacing: -2px;
+            }
+            .zuzzuu-slider .custom-text{
+              color: #BFD7F1;
+              font-family: Manrope;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            }
+
+            
+            /* MEDIA SCREEN CUSTOM EDITING START */
+            @media screen and (max-width: 768px) { 
+                .zuzzuu-header{ height: 500px!important; }
+            }
+            @media screen and (min-width: 992px) { 
+                .zuzzuu-header{ height: 600px!important; }
+            }
+            @media screen and (max-width: 992) { 
+                .zuzzuu-header{ height: 700px!important; }
+            }
+            @media screen and (max-width: 992px) { 
+                .have-any-questions{
+                  width: auto!important;
+                  height: auto!important;
+                }
+                .zuzzuu-slider .slick-dots{
+                  position: relative!important;
+                  bottom: 0!important;
+                  left: 0;
+                }
+            }
+            @media screen and (min-width: 992px) { 
+                .zuzzuu-nav-link{ padding-left: 3rem!important; padding-right: 3rem!important; }
+                .have-any-questions{
+                  width: 921px;
+                  height: 468px;
+                }
+            }
+            /* MEDIA SCREEN CUSTOM EDITING END */
+
+        </style>
+
+      <!-- IMPORT FROM PATHS -->
+      <link rel="icon" type="image/x-icon" href="/images/zuzzuu/favicon.ico">
+      <link rel="stylesheet" href="/css/main.css"/>
+      <link rel="stylesheet" href="/css/animations.css"/>
+      <script src="/js/main.js"></script>
+
+      <!-- IMPORT FROM LINKS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+      <div class="zuzzuu-header fade-to-visible">
+        <div class="container-fluid px-5">
+          <nav class="navbar zuzzuu-navbar navbar-expand-lg py-4">
+            <a class="navbar-brand" href="/urunler/zuzzuu/">
+                <img src="/images/zuzzuu-logo.png" width="100" height="40">
+            </a>
+            <button class="navbar-toggler zuzzuu-navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav">
+              <li class="nav-item active">
+                  <a class="nav-link zuzzuu-nav-link" href="/urunler/zuzzuu/">Anasayfa</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link zuzzuu-nav-link" href="/urunler/zuzzuu/why-zuzzuu.html">Neden ZUZZUU</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link zuzzuu-nav-link" href="/urunler/zuzzuu/features.html">Özellikler</a>
+                  </li>
+                  <li class="nav-item">
+                    <button type="button" onclick="GoContactForm()" id="nav-contact-button-mobile" class="btn zuzzuu-button my-2">İletişime Geçin</button>
+                    <div class="language-selector-mobile dropdown sarente-silver me-3">
+                      <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg class="language-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                          <g clip-path="url(#clip0_34_88)">
+                            <path d="M16.5 9C16.5 13.1421 13.1421 16.5 9 16.5M16.5 9C16.5 4.85786 13.1421 1.5 9 1.5M16.5 9C16.5 7.34315 13.1421 6 9 6C4.85786 6 1.5 7.34315 1.5 9M16.5 9C16.5 10.6569 13.1421 12 9 12C4.85786 12 1.5 10.6569 1.5 9M9 16.5C4.85786 16.5 1.5 13.1421 1.5 9M9 16.5C10.6569 16.5 12 13.1421 12 9C12 4.85786 10.6569 1.5 9 1.5M9 16.5C7.34315 16.5 6 13.1421 6 9C6 4.85786 7.34315 1.5 9 1.5M1.5 9C1.5 4.85786 4.85786 1.5 9 1.5" stroke="#FFFFFF" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_34_88">
+                              <rect width="18" height="18" fill="white"/>
+                            </clipPath>
+                          </defs>
+                        </svg>
+                        <span class="text-white mx-1">TR</span>
+                        <i class="fa-solid fa-chevron-down fa-2xs text-white"></i>
+                      </button>
+                      <ul class="dropdown-menu language-menu">
+                        <li><a class="dropdown-item text-white" href="#">TR</a></li>
+                        <li><a class="dropdown-item text-white" href="#">EN</a></li>
+                      </ul>
+                    </div>
+                  </li>
+              </ul>
+            </div>
+  
+            <div class="language-selector dropdown sarente-silver me-3">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <svg class="language-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <g clip-path="url(#clip0_34_88)">
+                    <path d="M16.5 9C16.5 13.1421 13.1421 16.5 9 16.5M16.5 9C16.5 4.85786 13.1421 1.5 9 1.5M16.5 9C16.5 7.34315 13.1421 6 9 6C4.85786 6 1.5 7.34315 1.5 9M16.5 9C16.5 10.6569 13.1421 12 9 12C4.85786 12 1.5 10.6569 1.5 9M9 16.5C4.85786 16.5 1.5 13.1421 1.5 9M9 16.5C10.6569 16.5 12 13.1421 12 9C12 4.85786 10.6569 1.5 9 1.5M9 16.5C7.34315 16.5 6 13.1421 6 9C6 4.85786 7.34315 1.5 9 1.5M1.5 9C1.5 4.85786 4.85786 1.5 9 1.5" stroke="#A4A4A4" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_34_88">
+                      <rect width="18" height="18" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="text-white mx-1">TR</span>
+                <i class="fa-solid fa-chevron-down fa-2xs text-white"></i>
+              </button>
+              <ul class="dropdown-menu language-menu">
+                <li><a class="dropdown-item text-white" href="#">TR</a></li>
+                <li><a class="dropdown-item text-white" href="#">EN</a></li>
+              </ul>
+            </div>
+            <button type="button" onclick="GoContactForm()" id="nav-contact-button" class="btn zuzzuu-button">İletişime Geçin</button>
+        </nav>
+
+        <div class="row py-5">
+          <div class="col-md-4 z-1">
+              <h1 class="zuzzuu-title purple-rainbow-text">
+                  Satış ve Pazarlama
+              </h1>
+              <h1 class="zuzzuu-title text-white">AI tabanlı Oyunlaştırma</h1>
+              <h5 class="text-white">ile Buluşuyor!</h5>
+              <p class="zuzzuu-paragraph">
+                  ZUZZUU ile Müşteri Deneyimini zirveye taşıyın!
+                  Müşterilerinizin tüm aksiyonlarını takip edin, puanlayın ve ödüller verin.
+                  Üstelik tek bir dijital cüzdan üzerinden!
+              </p>
+              <button type="button" onclick="GoContactForm()" class="btn zuzzuu-button"><span class="zuzzuu-text-mini">İLETİŞİME GEÇİN</span></button>
+          </div>
+        </div>
+
+        </div>
+        <div class="zuzzuu-header-gradient">
+
+        </div>
+      </div>
+
+      <div class="container-fluid overflow-hidden position-relative z-1 fade-to-visible margin-y py-5 pt-0">
+        <div class="zuzzuu-slider pb-5">
+          <div class="item row d-flex align-items-center">
+            <div class="col-md-6 overflow-hidden position-relative">
+                <img src="/images/zuzzuu/maisliderimg.png" class="zuzzuu-slider img-fluid"/>
+            </div>
+            <div class="col-md-6 mt-5 my-md-0 ps-md-5">
+              <h1 class="custom-title">Stratejimiz</h1>
+              <p class="custom-text">
+                Dijitalleştirilmiş Müşteri Deneyimi ile birlikte<br>
+                müşterilerinizin firmanızla olan etkileşimini<br>
+                arttırarak, tüm sürecin bir parçası<br>
+                olmalarını sağlamak.
+              </p>
+            </div>
+          </div>
+
+          <div class="item row d-flex align-items-center">
+            <div class="col-md-6 overflow-hidden position-relative">
+                <img src="/images/zuzzuu/maisliderimg2.png" class="zuzzuu-slider img-fluid"/>
+            </div>
+            <div class="col-md-6 mt-5 my-md-0 ps-md-5">
+              <h1 class="custom-title">Stratejimiz</h1>
+              <p class="custom-text">
+                Dijitalleştirilmiş Müşteri Deneyimi ile birlikte<br>
+                müşterilerinizin firmanızla olan etkileşimini<br>
+                arttırarak, tüm sürecin bir parçası<br>
+                olmalarını sağlamak.
+              </p>
+            </div>
+          </div>
+
+          <div class="item row d-flex align-items-center">
+            <div class="col-md-6 overflow-hidden position-relative">
+                <img src="/images/zuzzuu/maisliderimg.png" class="zuzzuu-slider img-fluid"/>
+            </div>
+            <div class="col-md-6 mt-5 my-md-0 ps-md-5">
+              <h1 class="custom-title">Stratejimiz</h1>
+              <p class="custom-text">
+                Dijitalleştirilmiş Müşteri Deneyimi ile birlikte<br>
+                müşterilerinizin firmanızla olan etkileşimini<br>
+                arttırarak, tüm sürecin bir parçası<br>
+                olmalarını sağlamak.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="customer-experience margin-y">
+          <div class="row d-flex justify-content-center align-items-center text-center">
+            <h1 class="zuzzuu-title purple-rainbow-text">360 Derece</h1>
+            <h1 class="zuzzuu-title text-white mb-5">Müşteri Deneyimi</h1>
+            <div class="customer-experience-items row d-flex justify-content-center align-items-center text-center mt-5">
+              <div class="item col-md-3">
+                <img src="/images/zuzzuu/customer-exp-img1.png" class="item-img center"/>
+                <img src="/images/zuzzuu/customer-exp-seperator.png" class="center my-4"/>
+                <p class="zuzzuu-paragraph">Tüm müşterilerinizi kategorize edin<br>
+                  ve tek bir alandan<br>
+                  görüntüleyin
+                </p>
+              </div>
+
+              <div class="item col-md-3">
+                <img src="/images/zuzzuu/customer-exp-img2.png" class="item-img center"/>
+                <img src="/images/zuzzuu/customer-exp-seperator.png" class="center my-4"/>
+                <p class="zuzzuu-paragraph center">Dinamik Veri Takibi ile müşterilerinizin<br>
+                  web ya da mobilden<br>
+                  tüm aksiyonlarını takip edin
+                </p>
+              </div>
+
+              <div class="item col-md-3">
+                <img src="/images/zuzzuu/customer-exp-img3.png" class="item-img center"/>
+                <img src="/images/zuzzuu/customer-exp-seperator.png" class="center my-4"/>
+                <p class="zuzzuu-paragraph">Müşterilerinizin aksiyonlarına<br>
+                  göre anlık senaryolar ve<br>
+                  kampanyalar oluşturun
+                </p>
+              </div>
+
+              <div class="item col-md-3">
+                <img src="/images/zuzzuu/customer-exp-img4.png" class="item-img center"/>
+                <img src="/images/zuzzuu/customer-exp-seperator.png" class="center my-4"/>
+                <p class="zuzzuu-paragraph">Müşterilerinize puan, kupon<br>
+                  ya da hediyeler verip,<br>
+                  etkileşiminizi arttırın
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="have-any-questions my-5">
+          <div class="row">
+            <h1 class="text-white text-center">Sorunuz mu var?</h1>
+            <p class="zuzzuu-paragraph text-center">ZUZZUU ile ilgili tüm sorularınız için dilediğiniz zaman
+              bize ulaşabilirsiniz.</p>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label text-light">Eposta Adresiniz</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="eposta@sarente.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label text-light">Mesajınız</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="ZUZZUU hakkında ne öğrenmek istiyorsunuz?" rows="3"></textarea>
+              </div>
+              
+          </div>
+          <button type="button" class="btn zuzzuu-button center mt-3"><span class="zuzzuu-text-mini">İletişime Geçin</span></button>
+        </div>
+
+      <!-- FOOTER SECTION START -->
+      <section>
+        <footer class="pt-5">
+          <div class="row d-flex justify-content-between">
+            <div class="col-md-3 mb-3">
+              <a class="" href="/">
+                <img src="/images/Sarente_Logo_white_big.png" width="146" height="32" class="sarente-logo"/>
+              </a>
+              <p class="paragraph-small text-white py-4">Sarente Bilgi Teknolojileri A.Ş. kurulduğu 
+                2015 yılından bu yana, yenilikçi yaklaşımıyla
+                müşterilerinin ihtiyaçlarına çözümler
+                sunuyor.</p>
+              <ul class="list-unstyled d-flex">
+                <li class="social-media"><a class="link-body-emphasis" href="https://twitter.com/Gameontechuk"><i class="fa-brands fa-x-twitter p-2"></i></a></li>
+                <li class="mx-3 social-media"><a class="link-body-emphasis" href="https://www.linkedin.com/company/gameon-tech/"><i class="fa-brands fa-linkedin-in p-2"></i></a></li>
+                <li class="social-media"><a class="link-body-emphasis" href="https://www.instagram.com/gameontechuk/"><i class="fa-brands fa-instagram p-2"></i></a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-4 mb-3">
+              <h5 class="zuzzuu-text text-white">İletişim Bilgileri</h5>
+              <ul class="nav flex-column">
+                <p class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path d="M14.8333 12.75C15.8757 13.1455 16.5 13.649 16.5 14.1974C16.5 15.4691 13.1421 16.5 9 16.5C4.85786 16.5 1.5 15.4691 1.5 14.1974C1.5 13.649 2.12433 13.1455 3.16667 12.75M10.5 6C10.5 6.82843 9.82843 7.5 9 7.5C8.17157 7.5 7.5 6.82843 7.5 6C7.5 5.17157 8.17157 4.5 9 4.5C9.82843 4.5 10.5 5.17157 10.5 6ZM9 13.5C10.1667 13.5 14.25 11.3112 14.25 6.60005C14.25 3.60002 11.9167 1.5 9 1.5C6.08333 1.5 3.75 3.60002 3.75 6.60005C3.75 11.3112 7.83333 13.5 9 13.5Z" stroke="#A4A4A4" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> İTÜ Teknokent ARI 2 Binası B Blok No: 501
+                34467, Sarıyer/İstanbul
+                </p>
+                <p class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path d="M14.8333 12.75C15.8757 13.1455 16.5 13.649 16.5 14.1974C16.5 15.4691 13.1421 16.5 9 16.5C4.85786 16.5 1.5 15.4691 1.5 14.1974C1.5 13.649 2.12433 13.1455 3.16667 12.75M10.5 6C10.5 6.82843 9.82843 7.5 9 7.5C8.17157 7.5 7.5 6.82843 7.5 6C7.5 5.17157 8.17157 4.5 9 4.5C9.82843 4.5 10.5 5.17157 10.5 6ZM9 13.5C10.1667 13.5 14.25 11.3112 14.25 6.60005C14.25 3.60002 11.9167 1.5 9 1.5C6.08333 1.5 3.75 3.60002 3.75 6.60005C3.75 11.3112 7.83333 13.5 9 13.5Z" stroke="#A4A4A4" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 1071 Plaza 1443. Cadde A Blok No: 18 D:130
+                06510, Çankaya/Ankara
+                </p>
+                <p class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path d="M3.59469 9.75C2.58134 8.0332 1.91091 6.03524 1.63816 3.81089C1.55826 3.15925 1.5183 2.83343 1.63516 2.50166C1.75536 2.16041 2.05905 1.81721 2.38314 1.65637C2.69822 1.5 3.07095 1.5 3.81641 1.5V1.5C4.42374 1.5 4.72741 1.5 4.98337 1.59658C5.2682 1.70405 5.51358 1.89564 5.68692 2.14589C5.8427 2.37079 5.91635 2.66539 6.06365 3.25459L6.15537 3.62146C6.37321 4.49283 6.48213 4.92851 6.46572 5.35608C6.45119 5.73471 6.36506 6.10717 6.21188 6.45374C6.03892 6.8451 5.74978 7.18874 5.1715 7.876L3.59469 9.75ZM3.59469 9.75C4.68602 11.5989 6.17506 13.1217 7.9934 14.25M7.9934 14.25C9.76659 15.3503 11.8529 16.0754 14.1889 16.3618C14.8407 16.4417 15.1666 16.4817 15.4983 16.3648C15.8396 16.2446 16.1828 15.941 16.3436 15.6169C16.5 15.3018 16.5 14.9215 16.5 14.1609V14.1609C16.5 13.5687 16.5 13.2726 16.4034 13.0166C16.296 12.7318 16.1044 12.4864 15.8541 12.3131C15.6292 12.1573 15.3346 12.0837 14.7454 11.9364L14.2142 11.8035C13.4007 11.6002 12.994 11.4985 12.5923 11.5071C12.2363 11.5147 11.8846 11.5856 11.5535 11.7164C11.1798 11.8641 10.8442 12.1154 10.1731 12.618L7.9934 14.25ZM10.5 5.25C11.0419 5.25 11.5838 5.59806 12 6.04268C12.4478 6.52108 12.75 7.11128 12.75 7.5M10.5 3C12.9853 3 15 5.01472 15 7.5" stroke="#A4A4A4" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> +90 312 220 24 14
+                </p>
+                <p class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path d="M13.5 6L12.75 6.5L12.3282 6.7812C11.1254 7.58309 10.5239 7.98404 9.87389 8.13981C9.29943 8.27748 8.70057 8.27748 8.12611 8.13981C7.47606 7.98404 6.87464 7.58309 5.6718 6.7812L5.25 6.5L4.5 6M7.5 15.75H10.5C12.6002 15.75 13.6503 15.75 14.4525 15.3413C15.1581 14.9817 15.7317 14.4081 16.0913 13.7025C16.5 12.9003 16.5 11.8502 16.5 9.75V8.25C16.5 6.1498 16.5 5.0997 16.0913 4.29754C15.7317 3.59193 15.1581 3.01825 14.4525 2.65873C13.6503 2.25 12.6002 2.25 10.5 2.25H7.5C5.3998 2.25 4.3497 2.25 3.54754 2.65873C2.84193 3.01825 2.26825 3.59193 1.90873 4.29754C1.5 5.0997 1.5 6.1498 1.5 8.25V9.75C1.5 11.8502 1.5 12.9003 1.90873 13.7025C2.26825 14.4081 2.84193 14.9817 3.54754 15.3413C4.3497 15.75 5.3998 15.75 7.5 15.75Z" stroke="#A4A4A4" stroke-width="1.125" stroke-linecap="round"/>
+                </svg> info@sarente.com
+                </p>
+              </ul>
+            </div>
+      
+            <div class="col-md-2 mb-3">
+              <form>
+                <h5 class="zuzzuu-text text-white">Bülten</h5>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2 newsletter-submit">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control zuzzuu-newsletter mb-3" placeholder="Eposta Adresiniz">
+                  <button class="btn newsletter-submit-btn" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <g clip-path="url(#clip0_242_166)">
+                        <path d="M11 13L12.5345 16.9899C13.5893 19.7326 14.1168 21.1039 14.825 21.4489C15.4375 21.7472 16.1598 21.7132 16.7415 21.3586C17.4142 20.9486 17.8104 19.5338 18.6027 16.7041L21.466 6.47824C21.9677 4.68672 22.2185 3.79096 21.9857 3.17628C21.7827 2.64035 21.3596 2.21724 20.8237 2.01427C20.209 1.78147 19.3133 2.03228 17.5217 2.53391L7.29584 5.39716C4.46617 6.18947 3.05133 6.58563 2.64136 7.25828C2.28678 7.84005 2.25275 8.56231 2.55106 9.17484C2.89597 9.88306 4.26729 10.4105 7.00993 11.4654L11 13ZM11 13L13.5 10.5" stroke="url(#paint0_linear_242_166)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                      <defs>
+                        <linearGradient id="paint0_linear_242_166" x1="10.5" y1="1" x2="10.5" y2="26" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#B183F0"/>
+                          <stop offset="1" stop-color="#6F3DE3"/>
+                        </linearGradient>
+                        <clipPath id="clip0_242_166">
+                          <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+                <p class="text-white">Bülten’e kayıt olun, yeniliklerden ve
+                  güncellemelerden ilk siz haberdar olun!</p>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between pt-3 border-top">
+            <p class="text-white">Entegre Yönetim Sistemi Politikası</p>
+            <p class="text-white">© 2023 • Sarente Bilgi Teknolojileri A.Ş. </p>
+          </div>
+
+        </footer>
+      </section>
+      <!-- FOOTER SECTION END -->
+
+    </div>
+
+
+        <!-- SLICK CSS START -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <script>
+          $('.zuzzuu-slider').slick({
+            dots: true,
+            draggable: false,
+            infinite: true,
+            speed: 300,
+            arrows: false,
+            slidesToShow: 1,
+          });
+
+
+          $('.customer-experience-items').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            arrows: false,
+            slidesToShow: 3,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  infinite: true,
+                  dots: true
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+            ]
+          });
+        </script>
+        <!-- SLICK CSS END -->
+      
+    
+</body>
+</html>
