@@ -66,6 +66,41 @@
       }
       .customer-item img { transition: all 0.3s ease-in-out!important; cursor: pointer; }
       .customer-item img:hover{ filter: brightness(50%); }
+      
+
+      /* CUSTOMER LOGO SLIDER START */
+      .customer-logos { 
+        overflow: hidden;
+        padding: 50px 0;
+        background-color: transparent;
+        white-space: nowrap;
+      }
+      .logos-slide img {
+        height: 40px;
+        margin: 0 40px;
+        opacity: 0.7;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+      .logos-slide img:hover{ opacity: 1; }
+      .logos-slide { 
+        display: inline-block;
+        animation: 10s logo-slider infinite linear;
+      }
+
+      .customer-logos:hover .logos-slide{
+        animation-play-state: paused;
+      }
+
+      @keyframes logo-slider {
+        from{
+          transform: translateX(0);
+        }
+        to{
+          transform: translateX(-100%);
+        }
+      }
+      /* CUSTOMER LOGO SLIDER END */
 
     </style>
 
@@ -113,7 +148,7 @@
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link sarente-nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Çözümler <i class="fa-solid fa-angle-down align-middle"></i>
+                        İş Ortakları <i class="fa-solid fa-angle-down align-middle"></i>
                       </a>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="https://www.gameontech.co.uk/">GameOn</a></li>
@@ -178,12 +213,14 @@
 
           <div class="carousel-item active" data-bs-interval="5000">
             <div style="background-image: url(/images/main-slider-img1.png); background-repeat: no-repeat; background-size: contain; background-position: right!important;" class="slider-item row d-flex align-items-center mx-md-3 mx-lg-5 py-md-3 py-lg-5">
-              <div class="col-md-3 slider-txtbox position-absolute">
+              <div class="col-md-4 slider-txtbox position-absolute">
                 <h1 class="title textw-600 mb-0">Sıradaki Oyun</h1>
                 <h1 class="title textw-800 text-blue">Sizin Olsun!</h1>
-                <p>Oyunun gücünden faydalanın!
-                  Müşterilerinizle etkileşiminizi en üst seviyeye taşıyın.
-                  Farklı konseptlerde firmanıza özel olarak tasarlanmış oyunlarla satışlarınızı arttırın.</p>
+                <p>Oyunun gücünden faydalanın!<br>
+                  Müşterilerinizle etkileşiminizi en üst seviyeye taşıyın.<br>
+                  Farklı konseptlerde firmanıza özel olarak tasarlanmış<br>
+                  oyunlarla satışlarınızı arttırın.
+                </p>
                 <button type="button" class="btn sarente-button black hover-black textw-500 me-md-5">ŞİMDİ DENEYİN!</button>
               </div>
             </div>
@@ -194,9 +231,11 @@
               <div class="col-md-3 slider-txtbox position-absolute">
                 <h1 class="title textw-600 mb-0">Sıradaki Oyun</h1>
                 <h1 class="title textw-800 text-blue">Sizin Olsun!</h1>
-                <p>Oyunun gücünden faydalanın!
-                  Müşterilerinizle etkileşiminizi en üst seviyeye taşıyın.
-                  Farklı konseptlerde firmanıza özel olarak tasarlanmış oyunlarla satışlarınızı arttırın.</p>
+                <p>Oyunun gücünden faydalanın!<br>
+                  Müşterilerinizle etkileşiminizi en üst seviyeye taşıyın.<br>
+                  Farklı konseptlerde firmanıza özel olarak tasarlanmış<br>
+                  oyunlarla satışlarınızı arttırın.
+                </p>
                 <button type="button" class="btn sarente-button black hover-black textw-500 me-md-5">ŞİMDİ DENEYİN!</button>
               </div>
             </div>
@@ -216,14 +255,6 @@
           </div>
           <div class="row d-flex justify-content-around">
 
-            <a href="/urunler/sarentegames/" class="mini-card col-sm-10 col-md-4 col-lg-3 py-5">
-              <div class="">
-                <img src="images/sol3.png"/>
-                <h4 class="index-title-mini my-3">E-Ticaret Oyun ve Oyunlaştırma Çözümleri</h4>
-                <p class="index-paragraph">Farklı konseptlerde özel olarak hazırlanmış oyunlarla etkileşiminizi ve satışlarınızı arttırın.</p>
-              </div>
-            </a>
-              
             <a href="/urunler/reactor/" class="mini-card col-sm-10 col-md-4 col-lg-3 py-5 my-4 my-md-0">
               <div >
                 <img src="images/sol2.png"/>
@@ -232,6 +263,14 @@
                   uygun veri işleme ve görselleştirme
                   uygulamaları kullanın.
                 </p>
+              </div>
+            </a>
+
+            <a href="/urunler/sarentegames/" class="mini-card col-sm-10 col-md-4 col-lg-3 py-5">
+              <div class="">
+                <img src="images/sol3.png"/>
+                <h4 class="index-title-mini my-3">E-Ticaret Oyun Çözümleri</h4>
+                <p class="index-paragraph">Farklı konseptlerde özel olarak hazırlanmış oyunlarla etkileşiminizi ve satışlarınızı arttırın.</p>
               </div>
             </a>
 
@@ -259,18 +298,18 @@
           <h6 class="title-sm">Bizi Tercih Eden<br>Müşterilerimiz</h6>
         </div>
         <div class="col-md-8 customers overflow-hidden">
-          <div class="customer-item row d-flex align-items-center justify-content-start">
-            <div class="preferred-customer col-md-2 my-3">
-              <img class="customer-img defacto" src="images/defacto.png"/>
+          <div class="customer-logos">
+            <div class="logos-slide">
+              <img src="images/defacto.png"/>
+              <img src="images/teknosa.png"/>
+              <img src="images/vodafone.png"/>
+              <img src="images/tctvob.png"/>
             </div>
-            <div class="preferred-customer col-md-2 my-3">
-              <img class="customer-img teknosa" src="images/teknosa.png"/>
-            </div>
-            <div class="preferred-customer col-md-2 my-3">
-              <img class="customer-img vodafone" src="images/vodafone.png"/>
-            </div>
-            <div class="preferred-customer col-md-2 my-3">
-              <img class="customer-img tctvob" src="images/tctvob.png"/>
+            <div class="logos-slide">
+              <img src="images/defacto.png"/>
+              <img src="images/teknosa.png"/>
+              <img src="images/vodafone.png"/>
+              <img src="images/tctvob.png"/>
             </div>
           </div>
         </div>
@@ -387,9 +426,9 @@
                 müşterilerinin ihtiyaçlarına çözümler
                 sunuyor.</p>
               <ul class="list-unstyled d-flex">
-                <li class="social-media"><a class="link-body-emphasis" href="https://twitter.com/Gameontechuk"><i class="fa-brands fa-x-twitter p-2"></i></a></li>
-                <li class="mx-3 social-media"><a class="link-body-emphasis" href="https://www.linkedin.com/company/gameon-tech/"><i class="fa-brands fa-linkedin-in p-2"></i></a></li>
-                <li class="social-media"><a class="link-body-emphasis" href="https://www.instagram.com/gameontechuk/"><i class="fa-brands fa-instagram p-2"></i></a></li>
+                <li class="social-media"><a class="link-body-emphasis" href="https://x.com/SarenteAS"><i class="fa-brands fa-x-twitter p-2"></i></a></li>
+                <li class="mx-3 social-media"><a class="link-body-emphasis" href="https://www.linkedin.com/company/sarente/"><i class="fa-brands fa-linkedin-in p-2"></i></a></li>
+                <li class="social-media"><a class="link-body-emphasis" href="https://www.instagram.com/sarenteas/"><i class="fa-brands fa-instagram p-2"></i></a></li>
               </ul>
             </div>
       
@@ -447,7 +486,7 @@
           </div>
       
           <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-            <p class="text-silver">Entegre Yönetim Sistemi Politikası</p>
+            <p class="text-silver"><a href="/documents/eysp.pdf" class="sarente-nav-link" target="_blank">Entegre Yönetim Sistemi Politikası</a></p>
             <p class="text-silver">© 2023 • Sarente Bilgi Teknolojileri A.Ş. </p>
           </div>
 
@@ -477,10 +516,12 @@
         dots: false,
         arrows: false,
         infinite: true,
-        speed: 500,
+        speed: 2000,
         slidesToShow: 3,
         slidesToScroll: 1,
         draggable: true,
+        autoplay: true,
+        autoplaySpeed: 1,
         responsive: [
           {
             breakpoint: 768,

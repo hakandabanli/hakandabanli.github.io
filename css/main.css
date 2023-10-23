@@ -82,16 +82,30 @@
 .sarente-nav-link{
     color: #A4A4A4!important;
     font-family: Manrope!important;
-    color: #A4A4A4!important;
     font-size: 14px!important;
     font-weight: 600!important;
     line-height: normal!important;
     text-decoration: none!important;
+    transition: all 0.2s ease-in-out!important;
 }
 .sarente-nav-link:hover{
     color: var(--sarente-dark)!important;
 }
-.navbar-nav .sarente-nav-link.active{ color: var(--sarente-blue)!important;}
+.sarentegames-nav-link{
+    color: #FFF!important;
+    font-family: Outfit!important;
+    font-size: 16px!important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    line-height: normal!important;
+    text-decoration: none!important;
+    transition: all 0.3s ease-in-out!important;
+}
+.sarentegames-nav-link:hover{
+    text-decoration: underline!important;
+}
+.navbar-nav .sarente-nav-link.active{ color: var(--sarente-blue)!important; }
+.navbar-nav .zuzzuu-nav-link.active{ color: #FF0697!important; }
 #nav-contact-button{
     width: 146px;
     height: 48px;
