@@ -56,14 +56,21 @@
             }
             .zuzzuu-nav-link:hover{ color: #FF0697!important; }
             .zuzzuu-title{
-                leading-trim: both!important;
-                text-edge: cap!important;
+                color: #FFF!important;
                 font-family: Manrope!important;
                 font-size: 52px!important;
                 font-style: normal!important;
                 font-weight: 600!important;
                 line-height: 50px!important;
                 letter-spacing: -2.6px!important;
+            }
+            .zuzzuu-features-subtitle{
+              color: #BFD7F1;
+              font-family: Manrope;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
             }
             .zuzzuu-subtitle{
               color: #BFD7F1!important;
@@ -74,21 +81,21 @@
               line-height: normal!important;
             }
             .feature-card-title{
-              color: #FFF!important;
-              text-align: center!important;
-              font-family: Manrope!important;
-              font-size: 20px!important;
-              font-style: normal!important;
-              font-weight: 500!important;
-              line-height: normal!important;
+              color: #FFF;
+              text-align: center;
+              font-family: Manrope;
+              font-size: 22px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
             }
             .feature-card-subtitle{
-              color: #FFF!important;
-              font-family: Manrope!important;
-              font-size: 14px!important;
-              font-style: normal!important;
-              font-weight: 400!important;
-              line-height: 1.25!important;
+              color: #FFF;
+              font-family: Manrope;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
             }
             .zuzzuu-slider{
               position: relative!important;
@@ -102,6 +109,22 @@
               margin-left: auto;
               margin-right: auto;
               padding: 3rem;
+            }
+            .have-any-questions-title{
+              color: #FFF;
+              font-family: Manrope;
+              font-size: 49.095px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 40.912px; /* 83.333% */
+            }
+            .have-any-questions-content{
+              color: #FFF;
+              font-family: Manrope;
+              font-size: 18.001px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
             }
             .have-any-questions input, textarea{
               color: #D9D9D9!important;
@@ -156,6 +179,22 @@
             .dropdown:hover .dropdown-menu {
               display: block!important;
               margin-top: 0!important;
+            }
+            .zuzzuu-footer{
+              color: #FFF;
+              font-family: Manrope;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 28px;
+            }
+            .zuzzuu-footer-column-title{
+              color: #FFF;
+              font-family: Manrope;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
             }
 
 
@@ -261,12 +300,12 @@
       <div class="container-fluid overflow-hidden fade-to-visible p-5">
 
         <div class="row d-flex justify-content-center text-center">
-            <div class="col-md-6">
+            <div class="col-md-10">
                 <h1 class="zuzzuu-title purple-rainbow-text">
                   ZUZZUU ile
                 </h1>
-                <h1 class="zuzzuu-title text-white">Süreçlerinizi Yeniden Tasarlayın!</h1>
-                <p class="feature-card-title">
+                <h1 class="zuzzuu-title mb-4">Süreçlerinizi Yeniden Tasarlayın!</h1>
+                <p class="zuzzuu-features-subtitle">
                   ZUZZUU'nun birbirinden farklı özellikleri ile tüm süreçlerinizi yeniden tasarlayın, etkileşiminizi ve satışlarınızı arttırın.
                 </p>
             </div>
@@ -499,8 +538,8 @@
           <div class="row">
             <div class="col-md-6">
               <img src="/images/zuzzuu-logo.png" class="mb-5" height="60"/>
-              <h1 class="zuzzuu-title textw-600 text-light mt-3">Sorunuz mu var?</h1>
-              <p class="paragraph text-light my-4">Soru sorun ya da daha detaylı bilgi için randevu oluşturun!
+              <h1 class="have-any-questions-title mt-3">Sorunuz mu var?</h1>
+              <p class="have-any-questions-content my-4">Soru sorun ya da daha detaylı bilgi için randevu oluşturun!
                 Sizinle hızlı bir şekilde iletişime geçelim.</p>
               <button type="button" onclick="GoContactForm()" class="btn zuzzuu-button">İletişime Geçin</button>
             </div>
@@ -513,13 +552,13 @@
 
       <!-- FOOTER SECTION START -->
       <section>
-        <footer class="pt-5">
+        <footer class="zuzzuu-footer pt-5">
           <div class="row d-flex justify-content-between">
             <div class="col-md-3 mb-3">
               <a class="" href="/">
                 <img src="/images/Sarente_Logo_white_big.png" width="146" height="32" class="sarente-logo"/>
               </a>
-              <p class="paragraph-small text-white py-4">Sarente Bilgi Teknolojileri A.Ş. kurulduğu 
+              <p class="py-4">Sarente Bilgi Teknolojileri A.Ş. kurulduğu 
                 2015 yılından bu yana, yenilikçi yaklaşımıyla
                 müşterilerinin ihtiyaçlarına çözümler
                 sunuyor.</p>
@@ -530,8 +569,8 @@
               </ul>
             </div>
       
-            <div class="col-md-4 mb-3">
-              <h5 class="zuzzuu-text text-white">İletişim Bilgileri</h5>
+            <div class="col-md-3 mb-3">
+              <h5 class="zuzzuu-footer-column-title">İletişim Bilgileri</h5>
               <ul class="nav flex-column">
                 <p class="text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
@@ -558,9 +597,9 @@
               </ul>
             </div>
       
-            <div class="col-md-2 mb-3">
+            <div class="col-md-3 mb-3">
               <form>
-                <h5 class="zuzzuu-text text-white">Bülten</h5>
+                <h5 class="zuzzuu-footer-column-title">Bülten</h5>
                 <div class="d-flex flex-column flex-sm-row w-100 gap-2 newsletter-submit">
                   <label for="newsletter1" class="visually-hidden">Email address</label>
                   <input id="newsletter1" type="text" class="form-control zuzzuu-newsletter mb-3" placeholder="Eposta Adresiniz">
@@ -591,8 +630,8 @@
           </div>
       
           <div class="d-flex flex-column flex-sm-row justify-content-between pt-3 border-top">
-            <p class="text-white">Entegre Yönetim Sistemi Politikası</p>
-            <p class="text-white">© 2023 • Sarente Bilgi Teknolojileri A.Ş. </p>
+            <p class="text-white"><a href="/documents/eysp.pdf" class="sarentegames-nav-link" target="_blank">Entegre Yönetim Sistemi Politikası</a></p>
+          <p class="text-white">© 2023 • Sarente Bilgi Teknolojileri A.Ş. </p>
           </div>
 
         </footer>
