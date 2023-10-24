@@ -32,14 +32,20 @@
                 font-weight: 700;
                 line-height: 65px;
             }
-            .sarente-games-title2 {
-                color: #FFF!important;
-                text-align: center!important;
-                font-family: Outfit!important;
-                font-size: 24px!important;
-                font-style: normal!important;
-                font-weight: 700!important;
-                line-height: normal!important;
+            .sarente-games .game-card{
+                width: 250px;
+                height: 400px;
+                background: transparent;
+            }
+            .sarente-games .game-card .game-title{
+                height: 60px;
+                color: #FFF;
+                text-align: center;
+                font-family: Outfit;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
             }
             .games-footer{
                 height: 200px;
@@ -116,7 +122,12 @@
                 font-weight: 800!important;
                 line-height: normal!important;
             }
-            .platform-badges .badge{ color: #9CF8F6!important; background: #316CE0; }
+            .platform-badges .badge{ }
+            .platform-badges a{ cursor: default; }
+            .platform-badges .game-active{ color: #9CF8F6!important; background: #316CE0; cursor: pointer!important; }
+            .platform-badges .game-passive{ color: #A8A8A8!important; background: rgba(0, 0, 0, 0.10); cursor: default!important; }
+            .sarente-all-games .platform-badges { transition: all 0.2s ease-in-out!important; }
+            .sarente-all-games .platform-badges .game-active:hover{ background: #0000002c; }
 
             .input-container {
                 position: relative;
@@ -138,10 +149,7 @@
                 border-top-right-radius: 10px;
                 border-bottom-right-radius: 10px;
             }
-            .sarente-all-games .platform-badges .badge{ transition: all 0.2s ease-in-out!important; }
-            .sarente-all-games .platform-badges .badge:hover{
-                background: #0000002c;
-            }
+            
 
             @media screen and (max-width: 768px) { 
                 .sarentegames-logo img{
@@ -180,75 +188,75 @@
             <div class="row d-flex justify-content-center align-items-center">
                 <h1 class="sarente-games-maintitle margin-y">Tüm Oyunlar</h1>
 
-                <div class="col-md-2 m-5">
+                <div class="game-card col-md-2 m-3">
                     <img src="/images/sarentegames/dino-catch.png" class="center" width="200" height="200"/>
-                    <h1 class="sarente-games-title2 mt-2 text-center mt-3">Dino Catch</h1>
+                    <h1 class="game-title my-3">Dino Catch</h1>
                     <div class="platform-badges d-flex justify-content-center">
-                        <a href=""><h3><span class="badge me-2">WEB</span></h3></a>
-                        <a href=""><h3><span class="badge me-2">MOBILE</span></h3></a>
+                        <a href="https://games.gameontech.co.uk/DinoCatch/"><h3><span class="badge game-active me-2">WEB</span></h3></a>
+                        <a href="https://games.gameontech.co.uk/DinoCatch/"><h3><span class="badge game-active me-2">MOBILE</span></h3></a>
                     </div>
                 </div>
 
-                <div class="col-md-2 m-5">
+                <div class="game-card col-md-2 m-3">
                     <img src="/images/sarentegames/gift-deck.png" class="center" width="200" height="200"/>
-                    <h1 class="sarente-games-title2 mt-2 text-center mt-3">Gift Deck</h1>
+                    <h1 class="game-title my-3">Gift Deck</h1>
                     <div class="platform-badges d-flex justify-content-center">
-                        <a href=""><h3><span class="badge me-2">WEB</span></h3></a>
-                        <a href=""><h3><span class="badge me-2">MOBILE</span></h3></a>
+                        <a href="https://games.gameontech.co.uk/GiftDeck/"><h3><span class="badge game-active me-2">WEB</span></h3></a>
+                        <a href="https://games.gameontech.co.uk/GiftDeck/"><h3><span class="badge game-active me-2">MOBILE</span></h3></a>
                     </div>
                 </div>
 
-                <div class="col-md-2 m-5">
+                <div class="game-card col-md-2 m-3">
                     <img src="/images/sarentegames/slinger-monkey.png" class="center" width="200" height="200"/>
-                    <h1 class="sarente-games-title2 mt-2 text-center mt-3">Slinger Monkey</h1>
+                    <h1 class="game-title my-3">Slinger Monkey</h1>
                     <div class="platform-badges d-flex justify-content-center">
-                        <a href=""><h3><span class="badge me-2">WEB</span></h3></a>
-                        <a href=""><h3><span class="badge me-2">MOBILE</span></h3></a>
+                        <a href="https://games.gameontech.co.uk/SlingerMonkey/"><h3><span class="badge game-active me-2">WEB</span></h3></a>
+                        <a href="https://games.gameontech.co.uk/SlingerMonkey/"><h3><span class="badge game-active me-2">MOBILE</span></h3></a>
                     </div>
                 </div>
 
-                <div class="col-md-2 m-5">
+                <div class="game-card col-md-2 m-3">
                     <img src="/images/sarentegames/big-fish.png" class="center" width="200" height="200"/>
-                    <h1 class="sarente-games-title2 mt-2 text-center mt-3">Big Fish</h1>
+                    <h1 class="game-title my-3">Big Fish</h1>
                     <div class="platform-badges d-flex justify-content-center">
-                        <a href=""><h3><span class="badge me-2">WEB</span></h3></a>
-                        <a href=""><h3><span class="badge me-2">MOBILE</span></h3></a>
+                        <a href="#"><h3><span class="badge game-passive me-2">WEB</span></h3></a>
+                        <a href="#"><h3><span class="badge game-passive me-2">MOBILE</span></h3></a>
                     </div>
                 </div>
 
-                <div class="col-md-2 m-5">
+                <div class="game-card col-md-2 m-3">
                     <img src="/images/sarentegames/thunder-patroller.png" class="center" width="200" height="200"/>
-                    <h1 class="sarente-games-title2 mt-2 text-center mt-3">Thunder Patroller</h1>
+                    <h1 class="game-title my-3">Thunder Patroller</h1>
                     <div class="platform-badges d-flex justify-content-center">
-                        <a href=""><h3><span class="badge me-2">WEB</span></h3></a>
-                        <a href=""><h3><span class="badge me-2">MOBILE</span></h3></a>
+                        <a href="#"><h3><span class="badge game-passive me-2">WEB</span></h3></a>
+                        <a href="#"><h3><span class="badge game-passive me-2">MOBILE</span></h3></a>
                     </div>
                 </div>
 
-                <div class="col-md-2 m-5">
+                <div class="game-card col-md-2 m-3">
                     <img src="/images/sarentegames/thunder-patroller-plus.png" class="center" width="200" height="200"/>
-                    <h1 class="sarente-games-title2 mt-2 text-center mt-3">Thunder Patroller Plus</h1>
+                    <h1 class="game-title my-3">Thunder Patroller Plus</h1>
                     <div class="platform-badges d-flex justify-content-center">
-                        <a href=""><h3><span class="badge me-2">WEB</span></h3></a>
-                        <a href=""><h3><span class="badge me-2">MOBILE</span></h3></a>
+                        <a href="#"><h3><span class="badge game-passive me-2">WEB</span></h3></a>
+                        <a href="#"><h3><span class="badge game-passive me-2">MOBILE</span></h3></a>
                     </div>
                 </div>
 
-                <div class="col-md-2 m-5">
+                <div class="game-card col-md-2 m-3">
                     <img src="/images/sarentegames/crazy-words.png" class="center" width="200" height="200"/>
-                    <h1 class="sarente-games-title2 mt-2 text-center mt-3">Crazy Words</h1>
+                    <h1 class="game-title my-3">Crazy Words</h1>
                     <div class="platform-badges d-flex justify-content-center">
-                        <a href=""><h3><span class="badge me-2">WEB</span></h3></a>
-                        <a href=""><h3><span class="badge me-2">MOBILE</span></h3></a>
+                        <a href="#"><h3><span class="badge game-passive me-2">WEB</span></h3></a>
+                        <a href="#"><h3><span class="badge game-passive me-2">MOBILE</span></h3></a>
                     </div>
                 </div>
 
-                <div class="col-md-2 m-5">
+                <div class="game-card col-md-2 m-3">
                     <img src="/images/sarentegames/duckduck.png" class="center" width="200" height="200"/>
-                    <h1 class="sarente-games-title2 mt-2 text-center mt-3">Duck Duck</h1>
+                    <h1 class="game-title my-3">Duck Duck</h1>
                     <div class="platform-badges d-flex justify-content-center">
-                        <a href=""><h3><span class="badge me-2">WEB</span></h3></a>
-                        <a href=""><h3><span class="badge me-2">MOBILE</span></h3></a>
+                        <a href="https://duckduck.gameontech.co.uk/vpZYiwhk3a5JPRhjtiyTdOZD9gt5I3Den/"><h3><span class="badge game-active me-2">WEB</span></h3></a>
+                        <a href="https://duckduck.gameontech.co.uk/vpZYiwhk3a5JPRhjtiyTdOZD9gt5I3Den/"><h3><span class="badge game-active me-2">MOBILE</span></h3></a>
                     </div>
                 </div>
 
