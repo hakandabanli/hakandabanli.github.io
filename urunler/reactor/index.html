@@ -32,6 +32,15 @@
             line-height: 54px!important;
             letter-spacing: -2.6px!important;
         }
+        .reactor-subtitle{
+          color: #777;
+          text-align: center;
+          font-family: Manrope;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
         .reactor-title-mini{
           color: #1B1B1B;
           text-align: center;
@@ -51,14 +60,23 @@
             font-weight: 500!important;
             line-height: normal!important;
         }
-        .reactor-paragraph-mini{
-            color: #777!important;
-            text-align: center!important;
-            font-family: Manrope!important;
-            font-size: 15px!important;
-            font-style: normal!important;
-            font-weight: 400!important;
-            line-height: normal!important;
+        .reactor-paragraph2{
+          color: #1B1B1B;
+          text-align: center;
+          font-family: Manrope;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+        .reactor-card-content{
+          color: #777;
+          text-align: center;
+          font-family: Manrope;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
         }
         .reactor-link{
             color: #428CFF!important;
@@ -76,13 +94,14 @@
             text-decoration: underline!important;
         }
         .reactor-card{
-            border-radius: 8px!important;
-            border: 1px solid #F1F1F1!important;
-            background: rgba(255, 255, 255, 0.30)!important;
-            box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.10)!important;
-            padding: 3rem;
-            margin-left: 0.75rem;
-            margin-right: 0.75rem;
+          border-radius: 8px;
+          border: 1px solid #F1F1F1;
+          background: rgba(255, 255, 255, 0.30);
+          box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.10);
+          backdrop-filter: blur(2px);
+          padding: 3rem;
+          margin-left: 0.75rem;
+          margin-right: 0.75rem;
         }
         .reactor-blur-icon{
             height: 200px;
@@ -90,7 +109,6 @@
         .reactor-blur-icon .img1 {
           position: relative;
         }
-
         .reactor-blur-icon .img2 {
           position: relative;
           bottom: 140px;
@@ -102,6 +120,33 @@
           background: #FFF;
           box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.10);
           padding: 5rem;
+        }
+        .reactor-have-any-questions-title{
+          color: #1B1B1B;
+          text-align: center;
+          font-family: Manrope;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 54px; /* 180% */
+          letter-spacing: -1.5px;
+        }
+        .reactor-have-any-questions-subtitle{
+          color: #777;
+          text-align: center;
+          font-family: Manrope;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+        .reactor-have-any-questions .inputs{
+          color: #1B1B1B;
+          font-family: Manrope;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
         }
         .reactor-have-any-questions-bg{
           width: 1010px;
@@ -125,6 +170,23 @@
         }
         .reactor-have-any-questions input::placeholder{ color: #D9D9D9; }
         .reactor-have-any-questions textarea::placeholder{ color: #D9D9D9; }
+        .reactor-footer{
+          color: #A4A4A4;
+          font-family: Manrope;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 28px; /* 200% */
+        }
+        .reactor-footer-column-title{
+          color: #1B1B1B;
+          font-family: Manrope;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+
 
         .dropdown-menu{
           padding: 10px 5px 10px 5px!important;
@@ -217,7 +279,7 @@
             <h1 class="reactor-title mb-5">Verilerinizi Modern Tasarımlarla<br>
                 Kolayca Takip Edin
             </h1>
-            <p class="reactor-paragraph">
+            <p class="reactor-subtitle">
                 Reactor dağınık ve birbirinden farklı protokollere sahip veri kaynaklarını değiştirmeden merkezileştirerek<br>
                 bütün verinin tek bir noktadan paylaşılmasına olanak sağlayan bir sistem bütünüdür.
             </p>
@@ -228,8 +290,8 @@
 
         <img src="/images/reactor/reactor-ui-bg.png" class="img-fluid center fade-transform"/>
 
-        <p class="reactor-paragraph-mini text-black">
-            Karmaşık ve anlamsız verileri düzenleyip,
+        <p class="reactor-paragraph2">
+            Karmaşık ve anlamsız verileri düzenleyip,<br>
             takibi kolay, üzerinde rahatça analiz yapılabilecek hale getiriyoruz.
         </p>
         <div class="reactor-blur-icon">
@@ -240,32 +302,32 @@
             <h1 class="reactor-title mb-5">Tüm Verilerinizi<br>
                 Tek Bir Yerde Toplayın!
             </h1>
-            <div class="reactor-card col-md-2 bg-white">
+            <div class="reactor-card col-md-3 bg-white">
                 <div class="reactor-source-logo center">
-                  <img src="/images/reactor/reactor-source.png" class="center"/>
+                  <img src="/images/reactor/reactor-source.png" class="img-fluid center"/>
                 </div>
                 <hr>
-                <p class="reactor-paragraph-mini">
+                <p class="reactor-card-content">
                     Dağıtık yapıda ve birbirinden farklı standartlara sahip veri kaynaklarına, tek bir noktadan bütünleştirilmiş ve ilişkilendirilmiş olarak ulaştırılmasını sağlayan sanallaştırılmış veri ambarıdır.
                 </p>
             </div>
 
-            <div class="reactor-card col-md-2 bg-white mx-3">
+            <div class="reactor-card col-md-3 bg-white mx-3">
               <div class="reactor-source-logo center">
-                  <img src="/images/reactor/reactor-api.png" class="center"/>
+                  <img src="/images/reactor/reactor-api.png" class="img-fluid center"/>
               </div>
               <hr>
-              <p class="reactor-paragraph-mini">
+              <p class="reactor-card-content">
                 Source üzerinde tanımlanmış tüm veri kaynaklarının diğer uygulamalar ile 2 yönlü veri entegrasyonu için gerekli web servislerini kod geliştirme ihtiyacı olmadan otomatik olarak oluşturan servis yönetimidir.
               </p>
           </div>
 
-          <div class="reactor-card col-md-2 bg-white">
+          <div class="reactor-card col-md-3">
             <div class="reactor-source-logo center">
-              <img src="/images/reactor/reactor-report.png" class="center"/>
+              <img src="/images/reactor/reactor-report.png" class="img-fluid center"/>
             </div>
             <hr>
-            <p class="reactor-paragraph-mini">
+            <p class="reactor-card-content">
               Reactor Source üzerinde tanımlanmış tüm veri kaynakları üzerinde barındırılan veriler ile genel veya kullanıcılara özel dinamik raporlar ve grafik ekranlar oluşturabilen raporlama aracıdır.
             </p>
         </div>
@@ -275,15 +337,15 @@
           <div class="reactor-have-any-questions center">
             <div class="reactor-have-any-questions-bg center"></div>
             <div class="row">
-              <h1 class="reactor-title-mini text-center">Sorunuz mu var?</h1>
-              <p class="reactor-paragraph text-center">Reactor ile ilgili tüm sorularınız için dilediğiniz zaman<br>
+              <h1 class="reactor-have-any-questions-title text-center">Sorunuz mu var?</h1>
+              <p class="reactor-have-any-questions-subtitle text-center">Reactor ile ilgili tüm sorularınız için dilediğiniz zaman<br>
                 bize ulaşabilirsiniz.</p>
                 <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label textw-500 text-dark">Eposta Adresiniz</label>
+                  <label for="exampleFormControlInput1" class="form-label inputs">Eposta Adresiniz</label>
                   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="eposta@sarente.com">
                 </div>
                 <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label textw-500 text-dark">Mesajınız</label>
+                  <label for="exampleFormControlTextarea1" class="form-label inputs">Mesajınız</label>
                   <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Reactor hakkında ne öğrenmek istiyorsunuz?" rows="3"></textarea>
                 </div>
                 <button type="button" onclick="GoContactForm()" id="nav-contact-button" class="btn reactor-button center">İletişime Geçin</button>
