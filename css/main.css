@@ -195,14 +195,9 @@
 .sarente-main-slider{
     background: var(--sarente-light);
 }
-.sarente-main-slider .carousel-item{
-    height: 600px!important;
-}
-.slider-item{
-    height: 100%!important;
-    background-position: center!important;
-    background-repeat: no-repeat;
-    background-size: cover;
+.sarente-main-slider .slider-item{
+    min-height: 500px!important;
+    height: 50vh!important;
 }
 .carousel-indicators [data-bs-target] {
     width: 3px!important;
@@ -395,8 +390,8 @@
 }
 @media screen and (max-width: 992px) { 
     .navbar-nav{ margin-top: 1rem; }
-    .sarente-main-slider .carousel-item{
-        height: 500px!important;
+    .sarente-main-slider .carousel-item div{
+        background-position: left!important;
     }
 }
 @media screen and (max-width: 992px) { 
