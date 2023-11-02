@@ -117,7 +117,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
-<body class="bg-light">
+<body class="bg-white">
     <!-- NAVBAR SECTION START -->
     <section>
         <nav class="sarente-navbar navbar navbar-expand-lg px-5">
@@ -128,46 +128,34 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
-                <li class="nav-item">
-                      <a class="nav-link sarente-nav-link" href="/">Anasayfa</a>
-                    </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link sarente-nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Ürünler <i class="fa-solid fa-angle-down align-middle"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/urunler/sarentegames/">Sarente Games</a></li>
+                      <li><a class="dropdown-item my-2" href="/urunler/zuzzuu/">ZUZZUU</a></li>
+                      <li><a class="dropdown-item" href="/urunler/zuudata/">ZUUDATA</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link sarente-nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      İş Ortakları <i class="fa-solid fa-angle-down align-middle"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="https://www.gameontech.co.uk/">GameOn</a></li>
+                    </ul>
+                  </li>
                     <li class="nav-item">
                       <a class="nav-link sarente-nav-link" href="about-us.html">Hakkımızda</a>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link sarente-nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Ürünler <i class="fa-solid fa-angle-down align-middle"></i>
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/urunler/sarentegames/">Sarente Games</a></li>
-                        <li><a class="dropdown-item my-2" href="/urunler/zuzzuu/">ZUZZUU</a></li>
-                        <li><a class="dropdown-item" href="/urunler/reactor/">Reactor</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link sarente-nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        İş Ortakları <i class="fa-solid fa-angle-down align-middle"></i>
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="https://www.gameontech.co.uk/">GameOn</a></li>
-                      </ul>
-                    </li>
                     <li class="nav-item">
-                      <button type="button" onclick="GoContactForm()" id="nav-contact-button-mobile" class="btn blue hover-blue mt-2">İletişime Geçin</button>
+                      <button type="button" onclick="GoContactForm()" id="nav-contact-button-mobile" class="btn sarente-button-outlined-black mt-2">İletişime Geçin</button>
                       <div class="language-selector-mobile dropdown sarente-silver me-3">
                         <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          <svg class="language-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                            <g clip-path="url(#clip0_34_88)">
-                              <path d="M16.5 9C16.5 13.1421 13.1421 16.5 9 16.5M16.5 9C16.5 4.85786 13.1421 1.5 9 1.5M16.5 9C16.5 7.34315 13.1421 6 9 6C4.85786 6 1.5 7.34315 1.5 9M16.5 9C16.5 10.6569 13.1421 12 9 12C4.85786 12 1.5 10.6569 1.5 9M9 16.5C4.85786 16.5 1.5 13.1421 1.5 9M9 16.5C10.6569 16.5 12 13.1421 12 9C12 4.85786 10.6569 1.5 9 1.5M9 16.5C7.34315 16.5 6 13.1421 6 9C6 4.85786 7.34315 1.5 9 1.5M1.5 9C1.5 4.85786 4.85786 1.5 9 1.5" stroke="#A4A4A4" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/>
-                            </g>
-                            <defs>
-                              <clipPath id="clip0_34_88">
-                                <rect width="18" height="18" fill="white"/>
-                              </clipPath>
-                            </defs>
-                          </svg>
+                          <img src="images/globe.svg"/>
                           <span class="text-silver mx-1">TR</span>
                           <i class="fa-solid fa-chevron-down fa-2xs text-silver"></i>
                         </button>
@@ -182,25 +170,16 @@
 
               <div class="language-selector dropdown sarente-silver me-3">
                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <svg class="language-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                    <g clip-path="url(#clip0_34_88)">
-                      <path d="M16.5 9C16.5 13.1421 13.1421 16.5 9 16.5M16.5 9C16.5 4.85786 13.1421 1.5 9 1.5M16.5 9C16.5 7.34315 13.1421 6 9 6C4.85786 6 1.5 7.34315 1.5 9M16.5 9C16.5 10.6569 13.1421 12 9 12C4.85786 12 1.5 10.6569 1.5 9M9 16.5C4.85786 16.5 1.5 13.1421 1.5 9M9 16.5C10.6569 16.5 12 13.1421 12 9C12 4.85786 10.6569 1.5 9 1.5M9 16.5C7.34315 16.5 6 13.1421 6 9C6 4.85786 7.34315 1.5 9 1.5M1.5 9C1.5 4.85786 4.85786 1.5 9 1.5" stroke="#A4A4A4" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/>
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_34_88">
-                        <rect width="18" height="18" fill="white"/>
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <span class="text-silver mx-1">TR</span>
-                  <i class="fa-solid fa-chevron-down fa-2xs text-silver"></i>
+                  <img src="images/globe.svg" class="language-icon"/>
+                  <span class="mx-1">TR</span>
+                  <i class="fa-solid fa-chevron-down fa-2xs"></i>
                 </button>
                 <ul class="dropdown-menu language-menu">
                   <li><a class="dropdown-item text-silver" href="#">TR</a></li>
                   <li><a class="dropdown-item text-silver" href="#">EN</a></li>
                 </ul>
               </div>
-              <button type="button" onclick="GoContactForm()" id="nav-contact-button" class="btn sarente-button blue hover-blue">İletişime Geçin</button>
+              <button type="button" onclick="GoContactForm()" id="nav-contact-button" class="btn sarente-button-outlined-black">İletişime Geçin</button>
             </div>
 
           </nav>
@@ -213,14 +192,6 @@
 
           <div class="carousel-item active" style="width: 100%; display: inline-block;">
             <div style="background-image: url(/images/main-slider-img.png); background-repeat: no-repeat; background-size: cover; background-position: center;" class="slider-item row d-flex align-items-center">
-              <div class="col-md-4 slider-txtbox position-absolute">
-                <h1 class="title textw-600 mb-0"> </h1>
-                <h1 class="title textw-800 text-blue"> </h1>
-                <p> 
-
-                </p>
-                <!--<button type="button" class="btn sarente-button black hover-black textw-500 me-md-5">ŞİMDİ DENEYİN!</button>-->
-              </div>
             </div>
           </div>
 
@@ -234,7 +205,7 @@
                   Farklı konseptlerde firmanıza özel olarak tasarlanmış<br>
                   oyunlarla satışlarınızı arttırın.
                 </p>
-                <button type="button" class="btn sarente-button black hover-black textw-500 me-md-5" tabindex="0">ŞİMDİ DENEYİN!</button>
+                <a href="/urunler/sarentegames/"><button type="button" class="btn sarente-button black hover-black textw-500 me-md-5" tabindex="0">ŞİMDİ DENEYİN!</button></a>
               </div>
             </div>
           </div>
@@ -244,59 +215,101 @@
     </section>
     <!-- MAIN SLIDER SECTION END -->
 
-    <!-- NEDEN SARENTE? SECTION START -->
-    <section class="my-5 mx-lg-5">
+    <div class="sarente-products">
       <div class="container-fluid">
-        <div class="sarente-solutions-content">
-          <div class="row d-flex justify-content-center text-center mb-3 mx-auto">
-            <h1 class="title text-center">Sarente Neden<br>Sizin İçin Doğru Tercih?</h1>
-            <p class="paragraph text-gray text-center my-3">Güncel teknolojilerle hazırlanmış uygulamalarımızla<br>hayal ettiğiniz çözümlere ulaşın!</p>
+        <h1 class="product-page-title text-center my-5">Ürünlerimiz</h1>
+
+        <div class="product row d-flex justify-content-around align-items-center">
+          <div class="col-md-6">
+            <img src="images/zuzzuu-logo-black.svg" class="mb-4" height="50"/>
+            <h1 class="product-title">
+              AI Tabanlı<br>
+              Gelir Artışı Çözümü
+            </h1>
+            <p class="product-paragraph">
+              Müşterilerinizin tüm aksiyonlarını<br>
+              takip edin, puanlandırın ve ödüller<br>
+              tanımlayın. 
+            </p>
+            <a href="/urunler/zuzzuu/"><button type="button" class="btn sarente-button-outlined-blue p-3" tabindex="0">Detaylı Bilgi</button></a>
           </div>
-          <div class="row d-flex justify-content-around">
+          <div class="col-md-6">
+            <img src="images/product-zuzzuu-ui.png" class="img-fluid"/>
+          </div>
+        </div>
 
-            <a href="/urunler/reactor/" class="mini-card col-sm-10 col-md-4 col-lg-3 py-5 my-4 my-md-0">
-              <div >
-                <img src="images/sol2.png"/>
-                <h4 class="index-title-mini my-3">Veri İşleme ve Görselleştirme</h4>
-                <p class="index-paragraph">Güncel teknolojilerle ihtiyaçlarınıza
-                  uygun veri işleme ve görselleştirme
-                  uygulamaları kullanın.
-                </p>
-              </div>
-            </a>
+        <div class="product row d-flex justify-content-around align-items-center bg-fa">
+          <div class="col-md-6">
+            <img src="images/products-zuudata-ui.png" class="img-fluid"/>
+          </div>
+          <div class="col-md-6 text-end">
+            <img src="images/zuudata-logo.svg" class="mb-4" height="50"/>
+            <h1 class="product-title">
+              Veri İşleme ve<br>
+              Görselleştirme
+            </h1>
+            <p class="product-paragraph">
+              Güncel teknolojilerle ihtiyaçlarınıza<br>
+              uygun veri işleme ve görselleştirme<br>
+              uygulamaları kullanın.
+            </p>
+            <a href="/urunler/zuudata/"><button type="button" class="btn sarente-button-outlined-blue p-3" tabindex="0">Detaylı Bilgi</button></a>
+          </div>
+        </div>
 
-            <a href="/urunler/sarentegames/" class="mini-card col-sm-10 col-md-4 col-lg-3 py-5">
-              <div class="">
-                <img src="images/sol3.png"/>
-                <h4 class="index-title-mini my-3">E-Ticaret Oyun Çözümleri</h4>
-                <p class="index-paragraph">Farklı konseptlerde özel olarak hazırlanmış oyunlarla etkileşiminizi ve satışlarınızı arttırın.</p>
-              </div>
-            </a>
+        <div class="product row d-flex justify-content-around align-items-center">
+          <div class="col-md-6">
+            <img src="images/sarentegames-logo-blue.svg" class="mb-4" height="50"/>
+            <h1 class="product-title">
+              E-Ticaret<br>
+              Oyun Çözümleri
+            </h1>
+            <p class="product-paragraph">
+              Farklı konseptlerde özel olarak<br>
+              hazırlanmış oyunlarla etkileşiminizi<br>
+              ve satışlarınızı arttırın.
+            </p>
+            <a href="/urunler/sarentegames/"><button type="button" class="btn sarente-button-outlined-blue p-3" tabindex="0">Detaylı Bilgi</button></a>
+          </div>
+          <div class="col-md-6">
+            <img src="images/product-sarentegames-ui.png" class="img-fluid"/>
+          </div>
+        </div>
+        
+      </div>
+    </div>
 
-            <a href="/urunler/zuzzuu/" class="mini-card col-sm-10 col-md-4 col-lg-3 py-5">
-              <div >
-                <img src="images/sol1.png"/>
-                <h4 class="index-title-mini my-3">Dijitalleştirilmiş Müşteri Etkileşimi</h4>
-                <p class="index-paragraph">Müşterilerinizin tüm aksiyonlarını
-                  takip edin, puanlandırın ve ödüller
-                  tanımlayın.
-                </p>
-              </div>
-            </a>
-
+    <div class="sarente-partners">
+      <div class="container-fluid">
+        <div class="product row d-flex justify-content-around align-items-center bg-fa">
+          <h1 class="product-page-title text-center mb-5">İş Ortaklarımız</h1>
+          <div class="col-md-6">
+            <img src="images/gameon-logo.svg" class="mb-4" height="50"/>
+            <h1 class="product-title">
+              Dijital Okul
+            </h1>
+            <p class="product-paragraph">
+              GameOn ile okulunuzda öğrencilerin<br>
+              etkileşimini arttırın. Motivasyonlarını<br>
+              yükselterek, birlikte başarmalarını<br>
+              sağlayın.
+            </p>
+            <a href="https://www.gameontech.co.uk/"><button type="button" class="btn sarente-button-outlined-blue p-3" tabindex="0">Detaylı Bilgi</button></a>
+          </div>
+          <div class="col-md-6">
+            <img src="images/partners-gameon.png" class="img-fluid"/>
           </div>
         </div>
       </div>
-    </section>
-    <!-- NEDEN SARENTE? SECTION END -->
+    </div>
 
     <!-- BİZİ TERCİH EDEN MÜŞTERİLER SECTION START -->
-    <section class="top-customers m-5">
-      <div class="customer-row row d-flex align-items-center">
+    <section class="top-customers p-5">
+      <div class="customer-row row d-flex justify-content-between align-items-center">
         <div class="col-md-3 my-5">
           <h6 class="title-sm">Bizi Tercih Eden<br>Müşterilerimiz</h6>
         </div>
-        <div class="col-md-8 customers overflow-hidden">
+        <div class="col-md-9 customers overflow-hidden">
           <div class="customer-logos">
             <div class="logos-slide">
               <img src="images/defacto.png"/>
@@ -316,111 +329,35 @@
     </section>
     <!-- BİZİ TERCİH EDEN MÜŞTERİLER SECTION END -->
 
-    <!-- MÜŞTERİ YORUMLARI SECTION START -->
-    <section>
-      <div class="customer-comments p-5">
-        
-        <div class="comment-card my-5 p-5">
-          <div class="row">
-            <div class="col-8 col-md-8">
-              <img src="images/comma.png" class="my-3" width="60px" height="60px">
-              <h5 class="title-sm">Harikulade!</h5>
-              <p class="paragraph">Sunmuş oldukları oyun çözümleri ile satışlarımızı
-10 kat arttırdık. Daha uzun yıllar boyunca çalışacağımıza eminim.</p>
-            </div>
-            <div class="col-4 col-md-4">
-              <div class="comment-user">
-                <div class="comment-badge">
-                  <img src="images/user1.png" class="comment-user-picture mx-auto m-3" width="60px" height="60px">
-                </div>
-                <div class="comment-user-info pt-2">
-                  <h5 class="textw-800 mb-0">Mehmet Z.</h5>
-                  <p class="textw-400">DeFacto CMO</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="comment-card my-5 p-5">
-          <div class="row">
-            <div class="col-8 col-md-8">
-              <img src="images/comma.png" class="my-3" width="60px" height="60px">
-              <h5 class="title-sm">Mükemmel!</h5>
-              <p class="paragraph">Oyunlarla birlikte satışlarımız arttı.
-                Özellikle Thunder Patroller oyunları mükemmel.
-                Mutlaka oynamalısınız.</p>
-            </div>
-            <div class="col-4 col-md-4">
-              <div class="comment-user">
-                <div class="comment-badge">
-                  <img src="images/user2.png" class="comment-user-picture mx-auto m-3" width="60px" height="60px">
-                </div>
-                <div class="comment-user-info pt-2">
-                  <h5 class="textw-800 mb-0">Osman A.</h5>
-                  <p class="textw-400">Vodafone CFO</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="comment-card my-5 p-5">
-          <div class="row">
-            <div class="col-8 col-md-8">
-              <img src="images/comma.png" class="my-3" width="60px" height="60px">
-              <h5 class="title-sm">Harika!</h5>
-              <p class="paragraph">Oyunlarla birlikte satışlarımız arttı.
-                Özellikle Crazy Words oyunları mükemmel.
-                Mutlaka oynamalısınız.</p>
-            </div>
-            <div class="col-4 col-md-4">
-              <div class="comment-user">
-                <div class="comment-badge">
-                  <img src="images/user3.png" class="comment-user-picture mx-auto m-3" width="60px" height="60px">
-                </div>
-                <div class="comment-user-info pt-2">
-                  <h5 class="textw-800 mb-0">Ayşe Y.</h5>
-                  <p class="textw-400">Teknosa HR</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!-- MÜŞTERİ YORUMLARI SECTION END -->
-
-
     <!-- SORUNUZ MU VAR? SECTION START -->
     <section>
       <div class="have-questions">
-        <div class="have-questions-bg d-flex align-items-center">
-          <div class="row">
-            <div class="col-md-7">
-              <img src="images/sarente-icon.png" class="mb-5"/>
-              <h1 class="title textw-600 text-light">Sorunuz mu var?</h1>
-              <p class="paragraph text-light my-4">Soru sorun ya da daha detaylı bilgi için randevu oluşturun!
-                Sizinle hızlı bir şekilde iletişime geçelim.</p>
-              <button type="button" onclick="GoContactForm()" class="btn sarente-button black hover-black textw-500 me-md-5">İletişime Geçin</button>
-            </div>
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6">
+            <img src="images/sarente-icon.png" class="mb-5"/>
+            <h1 class="title textw-600 text-light">Sorunuz mu var?</h1>
+            <p class="paragraph text-light my-4">Soru sorun ya da daha detaylı bilgi için randevu oluşturun!
+              Sizinle hızlı bir şekilde iletişime geçelim.</p>
+            <button type="button" onclick="GoContactForm()" class="btn sarente-button black hover-black textw-500 me-md-5">İletişime Geçin</button>
           </div>
-      </div>
+          <div class="col-md-6 hide-on-mobile">
+            <img src="images/ask-us.png" class="img-fluid"/>
+          </div>
+        </div>
     </div>
     </section>
     <!-- SORUNUZ MU VAR? SECTION END -->
 
     <!-- FOOTER SECTION START -->
     <section>
-      <div class="container-fluid px-5">
-        <footer class="py-5">
+      <div class="container-fluid">
+        <footer class="pt-5 px-5">
           <div class="row d-flex justify-content-between">
             <div class="col-md-3 mb-3">
               <a class="" href="/">
                 <img src="images/Sarente_Logo.png" width="146" height="32" class="sarente-logo"/>
               </a>
-              <p class="paragraph-small text-silver py-4">Sarente Bilgi Teknolojileri A.Ş. kurulduğu 
+              <p class="footer-paragraph py-4">Sarente Bilgi Teknolojileri A.Ş. kurulduğu 
                 2015 yılından bu yana, yenilikçi yaklaşımıyla
                 müşterilerinin ihtiyaçlarına çözümler
                 sunuyor.</p>
@@ -434,32 +371,32 @@
             <div class="col-md-4 mb-3">
               <h5 class="footer-title">İletişim Bilgileri</h5>
               <ul class="nav flex-column">
-                <p class="text-silver">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <p class="footer-paragraph">
+                <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                   <path d="M14.8333 12.75C15.8757 13.1455 16.5 13.649 16.5 14.1974C16.5 15.4691 13.1421 16.5 9 16.5C4.85786 16.5 1.5 15.4691 1.5 14.1974C1.5 13.649 2.12433 13.1455 3.16667 12.75M10.5 6C10.5 6.82843 9.82843 7.5 9 7.5C8.17157 7.5 7.5 6.82843 7.5 6C7.5 5.17157 8.17157 4.5 9 4.5C9.82843 4.5 10.5 5.17157 10.5 6ZM9 13.5C10.1667 13.5 14.25 11.3112 14.25 6.60005C14.25 3.60002 11.9167 1.5 9 1.5C6.08333 1.5 3.75 3.60002 3.75 6.60005C3.75 11.3112 7.83333 13.5 9 13.5Z" stroke="#A4A4A4" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg> İTÜ Teknokent ARI 2 Binası B Blok No: 501
                 34467, Sarıyer/İstanbul
                 </p>
-                <p class="text-silver">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <p class="footer-paragraph">
+                <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                   <path d="M14.8333 12.75C15.8757 13.1455 16.5 13.649 16.5 14.1974C16.5 15.4691 13.1421 16.5 9 16.5C4.85786 16.5 1.5 15.4691 1.5 14.1974C1.5 13.649 2.12433 13.1455 3.16667 12.75M10.5 6C10.5 6.82843 9.82843 7.5 9 7.5C8.17157 7.5 7.5 6.82843 7.5 6C7.5 5.17157 8.17157 4.5 9 4.5C9.82843 4.5 10.5 5.17157 10.5 6ZM9 13.5C10.1667 13.5 14.25 11.3112 14.25 6.60005C14.25 3.60002 11.9167 1.5 9 1.5C6.08333 1.5 3.75 3.60002 3.75 6.60005C3.75 11.3112 7.83333 13.5 9 13.5Z" stroke="#A4A4A4" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg> 1071 Plaza 1443. Cadde A Blok No: 18 D:130
                 06510, Çankaya/Ankara
                 </p>
-                <p class="text-silver">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <p class="footer-paragraph text-decoration-underline">
+                <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                   <path d="M3.59469 9.75C2.58134 8.0332 1.91091 6.03524 1.63816 3.81089C1.55826 3.15925 1.5183 2.83343 1.63516 2.50166C1.75536 2.16041 2.05905 1.81721 2.38314 1.65637C2.69822 1.5 3.07095 1.5 3.81641 1.5V1.5C4.42374 1.5 4.72741 1.5 4.98337 1.59658C5.2682 1.70405 5.51358 1.89564 5.68692 2.14589C5.8427 2.37079 5.91635 2.66539 6.06365 3.25459L6.15537 3.62146C6.37321 4.49283 6.48213 4.92851 6.46572 5.35608C6.45119 5.73471 6.36506 6.10717 6.21188 6.45374C6.03892 6.8451 5.74978 7.18874 5.1715 7.876L3.59469 9.75ZM3.59469 9.75C4.68602 11.5989 6.17506 13.1217 7.9934 14.25M7.9934 14.25C9.76659 15.3503 11.8529 16.0754 14.1889 16.3618C14.8407 16.4417 15.1666 16.4817 15.4983 16.3648C15.8396 16.2446 16.1828 15.941 16.3436 15.6169C16.5 15.3018 16.5 14.9215 16.5 14.1609V14.1609C16.5 13.5687 16.5 13.2726 16.4034 13.0166C16.296 12.7318 16.1044 12.4864 15.8541 12.3131C15.6292 12.1573 15.3346 12.0837 14.7454 11.9364L14.2142 11.8035C13.4007 11.6002 12.994 11.4985 12.5923 11.5071C12.2363 11.5147 11.8846 11.5856 11.5535 11.7164C11.1798 11.8641 10.8442 12.1154 10.1731 12.618L7.9934 14.25ZM10.5 5.25C11.0419 5.25 11.5838 5.59806 12 6.04268C12.4478 6.52108 12.75 7.11128 12.75 7.5M10.5 3C12.9853 3 15 5.01472 15 7.5" stroke="#A4A4A4" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg> +90 312 220 24 14
                 </p>
-                <p class="text-silver">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <p class="footer-paragraph">
+                <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                   <path d="M13.5 6L12.75 6.5L12.3282 6.7812C11.1254 7.58309 10.5239 7.98404 9.87389 8.13981C9.29943 8.27748 8.70057 8.27748 8.12611 8.13981C7.47606 7.98404 6.87464 7.58309 5.6718 6.7812L5.25 6.5L4.5 6M7.5 15.75H10.5C12.6002 15.75 13.6503 15.75 14.4525 15.3413C15.1581 14.9817 15.7317 14.4081 16.0913 13.7025C16.5 12.9003 16.5 11.8502 16.5 9.75V8.25C16.5 6.1498 16.5 5.0997 16.0913 4.29754C15.7317 3.59193 15.1581 3.01825 14.4525 2.65873C13.6503 2.25 12.6002 2.25 10.5 2.25H7.5C5.3998 2.25 4.3497 2.25 3.54754 2.65873C2.84193 3.01825 2.26825 3.59193 1.90873 4.29754C1.5 5.0997 1.5 6.1498 1.5 8.25V9.75C1.5 11.8502 1.5 12.9003 1.90873 13.7025C2.26825 14.4081 2.84193 14.9817 3.54754 15.3413C4.3497 15.75 5.3998 15.75 7.5 15.75Z" stroke="#A4A4A4" stroke-width="1.125" stroke-linecap="round"/>
                 </svg> info@sarente.com
                 </p>
               </ul>
             </div>
       
-            <div class="col-md-2 mb-3">
+            <div class="col-md-3 mb-3">
               <form>
                 <h5 class="footer-title">Bülten</h5>
                 <div class="d-flex flex-column flex-sm-row w-100 gap-2 newsletter-submit">
@@ -478,15 +415,15 @@
                     </svg>
                   </button>
                 </div>
-                <p class="text-silver">Bülten’e kayıt olun, yeniliklerden ve
+                <p class="footer-paragraph">Bülten’e kayıt olun, yeniliklerden ve<br>
                   güncellemelerden ilk siz haberdar olun!</p>
               </form>
             </div>
           </div>
-      
-          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-            <p class="text-silver"><a href="/documents/eysp.pdf" class="sarente-nav-link" target="_blank">Entegre Yönetim Sistemi Politikası</a></p>
-            <p class="text-silver">© 2023 • Sarente Bilgi Teknolojileri A.Ş. </p>
+          <div class="footer-line my-4"></div>
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-3">
+            <p class="footer-paragraph"><a href="/documents/eysp.pdf" class="footer-link" target="_blank">Entegre Yönetim Sistemi Politikası</a></p>
+            <p class="footer-paragraph">© 2023 • Sarente Bilgi Teknolojileri A.Ş. </p>
           </div>
 
         </footer>
@@ -502,13 +439,16 @@
     <script>
       $('.slider-items').slick({
         dots: false,
+        arrows: true,
+        prevArrow:"<img class='slick-prev slick-arrow' src='images/left-arrow.svg'>",
+        nextArrow:"<img class='slick-next slick-arrow' src='images/right-arrow.svg'>",
         infinite: true,
         speed: 800,
         slidesToShow: 1,
         slidesToScroll: 1,
         draggable: false,
         autoplay: true,
-        autoplaySpeed: 7000,
+        autoplaySpeed: 7000
       });
 
       $('.customer-item').slick({
