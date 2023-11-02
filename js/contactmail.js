@@ -43,7 +43,7 @@ async function Send_Support_Mail(){
             headers: headers,
         });
         if(response.status == "201"){
-            setTimeout(() => { alert("Mesajınız başarıyla iletildi!, anasayfaya yönlendiriliyorsunuz.."); location.href = GoHomepage(); }, 2000);
+            setTimeout(() => { alert("Mesajınız başarıyla iletildi!"); location.reload(); }, 2000);
         }
         else{ alert("Please enter valid information!"); }
     }catch(error){ alert("Error! " + error.message); }
