@@ -271,11 +271,21 @@
 
 /* MAIN SLIDER CSS START */
 .sarente-main-slider{
-    background: var(--sarente-light);
+    background: transparent!important;
 }
 .sarente-main-slider .slider-item{
-    min-height: 500px!important;
-    height: 50vh!important;
+    min-height: 500px;
+    height: 50vh;
+}
+.sarente-main-slider .main-slider-bg1{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sarente-main-slider .main-slider-bg2{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
 }
 .carousel-indicators [data-bs-target] {
     width: 3px!important;
@@ -491,6 +501,23 @@
         padding: 5rem!important;
     }
 }
+@media screen and (max-width: 1325px) { 
+    .sarente-main-slider .main-slider-bg1{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .sarente-main-slider .main-slider-bg2{
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .sarente-main-slider .slider-item{
+        min-height: 140px!important;
+        height: auto!important;
+        width: auto!important;
+    }
+}
 @media screen and (max-width: 768px) { 
     .sarente-main-slider{ text-align: center; }
     .sarente-solutions-content{
@@ -512,9 +539,6 @@
 }
 @media screen and (max-width: 992px) { 
     .navbar-nav{ margin-top: 1rem; }
-    .sarente-main-slider .carousel-item div{
-        background-position: left!important;
-    }
 }
 @media screen and (max-width: 992px) { 
     #nav-contact-button{
