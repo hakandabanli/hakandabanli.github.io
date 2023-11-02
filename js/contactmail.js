@@ -8,12 +8,6 @@ var customer = {
     message:""
 };
 
-
-if(customer.full_name != null)
-{
-    console.log(document.getElementById("input_customer_name").value);
-}
-
 function GetContactReasonValue(){
     var contactreason_radiobuttons = document.getElementsByName('contactreason_radiobutton');
     var contact_reason_value = "";

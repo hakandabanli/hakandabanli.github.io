@@ -316,22 +316,22 @@
           </div>
           <div class="col-md-8 my-5 my-md-0 px-4">
   
-            <form class="row g-4">
+            <form action="javascript:Send_Support_Mail()" class="row g-4">
               <div class="col-md-6">
                 <label for="inputEmail4" class="form-label mb-0">Adınız</label>
-                <input type="text" class="form-control custom-input" id="input_customer_name" placeholder="Adınız">
+                <input type="text" class="form-control custom-input" id="input_customer_name" placeholder="Adınız" required>
               </div>
               <div class="col-md-6">
                 <label for="inputPassword4" class="form-label mb-0">Soyadınız</label>
-                <input type="text" class="form-control custom-input" id="input_customer_surname" placeholder="Soyadınız">
+                <input type="text" class="form-control custom-input" id="input_customer_surname" placeholder="Soyadınız" required>
               </div>
               <div class="col-md-6">
                 <label for="inputAddress" class="form-label mb-0">Eposta Adresiniz</label>
-                <input type="email" class="form-control custom-input" id="input_customer_email" placeholder="Eposta Adresiniz">
+                <input type="email" class="form-control custom-input" id="input_customer_email" placeholder="Eposta Adresiniz" required>
               </div>
               <div class="col-md-6">
                 <label for="inputAddress2" class="form-label mb-0">Telefon Numaranız</label>
-                <input type="tel" class="form-control custom-input" id="input_customer_phone" value="+90" placeholder="+90">
+                <input type="tel" class="form-control custom-input" id="input_customer_phone" value="+90" placeholder="+90" required>
               </div>
               <div class="col-md-12">
                 <h1 class="contact-reason-title">İletişime Geçme Sebebiniz</h1>
@@ -354,10 +354,10 @@
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label mb-0">Mesajınız</label>
-                <textarea class="form-control custom-input" id="input_customer_message" placeholder="Lütfen mesajınızı yazınız.." rows="3"></textarea>
+                <textarea class="form-control custom-input" id="input_customer_message" placeholder="Lütfen mesajınızı yazınız.." rows="3" required></textarea>
               </div>
               <div class="col-12">
-                <button type="button" onclick="Send_Support_Mail()" class="btn sarente-button blue hover-blue float-end" id="contact_submit_button">İletişime Geçin</button>
+                <button type="submit" class="btn sarente-button blue hover-blue float-end" id="contact_submit_button">İletişime Geçin</button>
               </div>
             </form>
             
