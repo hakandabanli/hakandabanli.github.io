@@ -51,7 +51,7 @@
 .paragraph { font-size: 15px!important; font-weight: 500!important; }
 .paragraph-small { font-size: 13px!important; font-weight: 300!important; }
 .product{
-    padding: 5rem;
+    padding: 3rem;
 }
 .product-page-title{
     color: #2D3448!important;
@@ -176,6 +176,14 @@
 }
 .navbar-nav .sarente-nav-link.active{ color: var(--sarente-blue)!important; }
 .navbar-nav .zuzzuu-nav-link.active{ color: #FF0697!important; }
+.sarente-navbar .dropdown-menu .dropdown-item{
+    color: #A4A4A4!important;
+    font-family: Outfit!important;
+    font-size: 14px!important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    line-height: normal!important;
+}
 #nav-contact-button{
     width: 146px;
     height: 48px;
@@ -210,7 +218,7 @@
 }
 .language-selector .dropdown-menu .dropdown-item {
     color: #A4A4A4!important;
-    font-family: Manrope!important;
+    font-family: Outfit!important;
     font-size: 14px!important;
     font-style: normal!important;
     font-weight: 400!important;
