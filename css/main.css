@@ -501,7 +501,7 @@
         padding: 5rem!important;
     }
 }
-@media screen and (max-width: 1325px) { 
+@media screen and (max-width: 992px) { 
     .sarente-main-slider .main-slider-bg1{
         background-repeat: no-repeat;
         background-size: cover;
