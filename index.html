@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZUZZUU</title>
+
+    <!-- IMPORT FROM PATHS -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/main.css"/>
+    <script src="/js/main.js"></script>
+
+    <!-- IMPORT FROM LINKS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/567f6198f0.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <nav class="zuzzuu-navbar navbar navbar-expand-md bg-transparent mb-5">
+            <div class="container-fluid mx-0 mx-md-5">
+                <a class="navbar-brand" href="/">
+                    <img src="/images/zuzzuu-logo.svg" width="130" height="50">
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse justify-content-end navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav my-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">FEATURES</a>
+                </li>
+                <li class="nav-item mx-0 mx-md-5">
+                    <a class="nav-link" href="#">CONTACT</a>
+                </li>
+                </ul>
+                <a href="#"><button type="button" class="btn zuzzuu-rainbow-button ms-0 ms-md-2">GET STARTED</button></a>
+            </div>
+            </div>
+        </nav>
+
+        <div class="landing-page-part1 row d-flex px-5 my-5">
+            <div class="col-sm-12 col-md-6">
+                <h1 class="zuzzuu-title-xl text-break">Surprisingly<br>
+                    Revenue <span class="zuzzuu-rainbow-text1">Growth</span>
+                </h1>
+                <p class="zuzzuu-paragraph-20p">
+                    One simple platform for Revenue Growth, a hub for AI powered work:<br>
+                    Customer Journeys, Goals, Clubs, Campaigns, Games and more.
+                </p>
+                <div class="mini-features my-4">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-6 col-md-4 feature d-flex align-items-center">
+                            <img src="/images/mini-feature-img-1.png" height="80"/>
+                            <p class="m-0 ms-2">
+                                Increase<br>
+                                Your Revenue
+                            </p>
+                        </div>
+    
+                        <div class="col-6 col-md-4 feature d-flex align-items-center mx-auto">
+                            <img src="/images/mini-feature-img-2.png" height="80"/>
+                            <p class="m-0 ms-2">
+                                Maximize<br>
+                                Your Marketing
+                            </p>
+                        </div>
+    
+                        <div class="col-6 col-md-4 feature d-flex align-items-center mx-auto">
+                            <img src="/images/mini-feature-img-3.png" height="80"/>
+                            <p class="m-0 ms-2">
+                                Get Your<br>
+                                Customers Hooked
+                            </p>
+                        </div>
+
+                        <div class="col-6 col-md-4 feature d-flex align-items-center">
+                            <img src="/images/mini-feature-img-4.png" height="70"/>
+                            <p class="m-0 ms-2">
+                                Hit the<br>
+                                Bull’s Eye
+                            </p>
+                        </div>
+    
+                        <div class="col-6 col-md-4 feature d-flex align-items-center mx-auto">
+                            <img src="/images/mini-feature-img-5.png" height="80"/>
+                            <p class="m-0 ms-2">
+                                Power up with<br>
+                                Booster Games
+                            </p>
+                        </div>
+    
+                        <div class="col-6 col-md-4 feature d-flex align-items-center mx-auto">
+                            <img src="/images/mini-feature-img-6.png" height="80"/>
+                            <p class="m-0 ms-2">
+                                Real-time offers<br>
+                                with infinite possibilities
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <a href="#"><button type="button" class="btn zuzzuu-rainbow-button mt-3">Start Now</button></a>
+            </div>
+            <div class="col-sm-12 col-md-6 px-0 px-md-2">
+                <img src="/images/landing-page-zuzzuu-ui.png" class="img-fluid my-5 my-md-0"/>
+            </div>
+        </div>
+
+        <p class="zuzzuu-paragraph text-gray fontw-600 text-center px-3">ZUZZUU’s AI Powered solution has already helped dozens of teams succeed</p>
+
+        <div class="landing-page-part2 px-5 my-5">
+            <div class="use-cases-slider mobile-width mx-auto p-3 p-md-5">
+                <div class="use-cases-tabs overflow-hidden mb-4 mx-auto">
+                    <div class="row d-flex flex-nowrap justify-content-center align-items-center h-100">
+                        <div class="col-md-3 h-100 pe-0" style="width: 30%;">
+                            <button id="use-cases-btn" type="button" onclick="showUseCases()" class="btn btn-start">Use Cases</button>
+                        </div>
+                        <div class="col-md-6 h-100 px-0" style="width: 40%;">
+                            <button id="competitive-advantages-btn" type="button" onclick="showCompetitiveAdvantages()" class="btn btn-center">Competitive Advantage</button>
+                        </div>
+                        <div class="col-md-3 h-100 ps-0" style="width: 30%;">
+                            <button id="benefits-btn" type="button" onclick="showBenefits()" class="btn btn-end">Benefits</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="competitive-advantages-div" class="competitive-advantage">
+                    <div class="row d-flex align-items-center h-100">
+                        <img src="/images/competitive-advantage-img.png" class="img-fluid center"/>
+                    </div>
+                </div>
+
+                <div id="benefits-div" class="benefits">
+                    <div class="row d-flex align-items-center h-100">
+                        <img src="/images/benefits-img.png" class="img-fluid center"/>
+                    </div>
+                </div>
+
+                <div id="use-cases-div" class="use-cases">
+
+                    <div class="use-case d-flex align-items-center h-100">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-sm-12 col-md-6">
+                                <h1 class="title center-text-on-mobile">
+                                    Take customer experience<br>
+                                    to the top with ZUZZUU
+                                </h1>
+                                <p class="paragraph center-text-on-mobile">
+                                    Shorten your distance with your customers, gather<br> your customers on a single platform and create a<br> 360-degree customer experience.
+                                </p>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <img src="/images/use-case-1-img.png" class="img-fluid"/>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="use-case d-flex align-items-center h-100">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-sm-12 col-md-6">
+                                <h1 class="title center-text-on-mobile">
+                                    Track all actions with<br>
+                                    Dynamic Data Tracking
+                                </h1>
+                                <p class="paragraph center-text-on-mobile">
+                                    With Dynamic Data Tracking, instantly track all<br> actions of your customers on the web or mobile,<br> score them, make offers and deals.
+                                </p>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <img src="/images/use-case-1-img.png" class="img-fluid"/>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="use-case d-flex align-items-center h-100">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-sm-12 col-md-6">
+                                <h1 class="title center-text-on-mobile">
+                                    Be a path and lighten<br>
+                                    your customers’ journey
+                                </h1>
+                                <p class="paragraph center-text-on-mobile">
+                                    Create instant scenarios and campaigns based on<br> your customers' actions and boost customers’ loyalty.
+                                </p>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <img src="/images/use-case-1-img.png" class="img-fluid"/>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="use-case d-flex align-items-center h-100">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-sm-12 col-md-6">
+                                <h1 class="title center-text-on-mobile">
+                                    Use the power of ZUZZUU<br>
+                                    for Revenue Growth
+                                </h1>
+                                <p class="paragraph center-text-on-mobile">
+                                    With easy steps, set all the rules and start progress.<br> Make strategic moves. In a short time your revenue<br> will be higher.
+                                </p>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <img src="/images/use-case-1-img.png" class="img-fluid"/>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="landing-page-part3 px-5 my-5">
+            <div class="row page-title">
+                <h1 class="zuzzuu-title-l text-center mt-5">How to Use?</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="300" height="28" viewBox="0 0 300 28" fill="none">
+                    <path d="M6.50891 14.0627C8.85773 14.0627 11.3184 13.9162 13.6672 13.7697C14.6739 13.7697 15.5687 13.6233 16.5753 13.6233C20.8255 13.3303 25.0758 13.0373 29.326 12.7443C34.4711 12.4514 39.5043 12.0119 44.6493 11.7189C51.9195 11.133 59.1897 10.6935 66.4598 10.1076C68.1376 9.96109 69.8153 9.96109 71.493 9.8146C75.7433 9.52163 79.9935 9.22865 84.2438 9.08217C88.494 8.78919 92.7443 8.49622 96.9945 8.34973C98.6723 8.20325 100.35 8.05676 102.028 8.05676C108.739 7.76379 115.561 7.47081 122.272 7.17784C126.411 7.03135 130.549 6.88487 134.799 6.5919C136.477 6.5919 138.043 6.44541 139.721 6.44541C146.208 6.29892 152.807 6.15244 159.294 6.00595C165.782 5.85946 172.157 5.71298 178.644 5.56649C180.322 5.56649 182 5.56649 183.789 5.56649C188.039 5.56649 192.178 5.56649 196.428 5.56649C203.027 5.56649 209.514 5.56649 216.113 5.42C218.239 5.42 220.364 5.42 222.489 5.42C226.963 5.42 231.437 5.42 235.911 5.42C236.246 5.42 236.694 5.42 237.029 5.42C226.963 5.56649 216.785 5.71298 206.718 6.00595C202.468 6.15244 198.329 6.15244 194.079 6.29892C192.29 6.29892 190.388 6.29892 188.599 6.44541C182.447 6.59189 176.407 6.88487 170.255 7.03135C163.209 7.32433 156.163 7.47081 149.116 7.76379C147.886 7.76379 146.767 7.91027 145.537 7.91027C141.734 8.20325 138.043 8.34973 134.24 8.64271C126.634 9.08217 119.029 9.52163 111.423 9.96109C110.305 9.96109 109.186 10.1076 108.068 10.2541C104.377 10.547 100.574 10.9865 96.8827 11.2795C90.1718 11.8654 83.5727 12.4514 76.8618 13.0373C75.0722 13.1838 73.1708 13.4768 71.3812 13.6233C67.1309 14.0627 62.8807 14.5022 58.6304 15.0881C53.2617 15.6741 47.7811 16.26 42.4124 16.846C34.9185 17.7249 27.3128 18.6038 19.8189 19.4827C18.0293 19.6292 16.2397 19.9222 14.3383 20.0687C11.0947 20.5081 7.85109 20.9476 4.60748 21.387C4.27193 21.387 3.93638 21.68 3.93638 22.266C3.93638 22.7054 4.27193 23.1449 4.60748 23.1449C5.83781 23.1449 6.9563 23.2914 8.18664 23.2914C7.96294 24.0238 7.85109 24.4633 7.85109 24.9027C7.85109 26.5141 8.85773 27.9789 10.1999 27.9789C19.4834 27.2465 28.655 26.3676 37.9384 25.7816C45.9915 25.3422 54.0446 24.7562 62.0977 24.3168C70.9338 23.7308 79.8817 23.1449 88.7177 22.7054C91.514 22.5589 94.3102 22.4124 97.1064 22.1195C97.8893 22.1195 98.6723 21.973 99.5671 21.973C113.884 21.5335 128.2 20.9476 142.517 20.5081C150.123 20.2151 157.84 19.9222 165.446 19.7757C168.242 19.6292 170.927 19.6292 173.723 19.4827C188.375 19.1897 203.027 18.8968 217.679 18.6038C223.943 18.4573 230.206 18.3108 236.47 18.1643C241.839 18.0178 247.207 18.0178 252.576 17.7249C257.05 17.5784 261.412 17.2854 265.886 17.1389C268.123 16.9924 270.36 16.9924 272.485 16.846C277.518 16.4065 282.552 15.967 287.585 15.5276C287.249 16.1135 287.249 16.9924 287.361 17.5784C287.473 18.3108 287.808 18.8968 288.368 19.1897C288.815 19.4827 289.486 19.7757 289.934 19.4827C291.052 18.8968 292.171 18.3108 293.177 17.7249C293.177 17.7249 293.177 17.7249 293.065 17.7249C293.177 17.7249 293.177 17.5784 293.289 17.5784C293.401 17.5784 293.513 17.4319 293.513 17.4319H293.401C293.96 17.1389 294.519 16.846 295.191 16.4065C295.75 16.1135 296.421 15.6741 296.98 15.3811C297.651 14.9416 298.21 14.5022 298.882 14.0627C299.553 13.6232 300 12.4514 300 11.426C300 10.84 299.888 10.4005 299.664 9.8146C299.441 9.22865 298.882 8.49622 298.322 8.34973C297.763 8.20325 297.204 8.05676 296.645 8.05676C296.533 8.05676 296.421 8.05676 296.309 8.05676C295.973 8.05676 295.526 8.05676 295.191 8.20325C294.296 8.34973 293.513 8.49622 292.618 8.49622C291.947 8.49622 291.276 8.64271 290.493 8.64271C288.591 8.78919 286.802 8.93568 284.9 9.22865C284.453 9.22865 283.894 9.37514 283.446 9.37514C283.67 9.08217 283.782 8.78919 283.782 8.49622C283.894 8.20325 283.894 7.91027 283.894 7.6173C283.894 7.47081 283.894 7.17784 284.006 7.03135C284.006 6.73838 284.006 6.44541 283.894 6.29892C283.894 6.29892 284.006 6.29892 284.006 6.15244C284.341 5.85946 284.677 5.56649 284.9 4.98054C285.124 4.54108 285.236 3.95514 285.236 3.36919C285.236 2.78324 285.124 2.34379 284.9 1.75784C284.789 1.61135 284.677 1.31838 284.565 1.17189C284.229 0.732433 283.894 0.585946 283.558 0.43946C282.887 0.146487 282.104 0 281.321 0C280.65 0 280.091 0 279.42 0C278.525 0 277.63 0 276.735 0C275.505 0 274.163 0 272.933 0C269.577 0 266.222 0 262.866 0C259.734 0 256.491 0 253.359 0C250.451 0 247.655 0 244.747 0C233.226 0 221.818 0.146487 210.297 0.292973C201.685 0.43946 193.073 0.585946 184.46 0.585946C180.657 0.585946 176.743 0.732433 172.94 0.878919C164.327 1.17189 155.715 1.31838 147.103 1.61135C144.642 1.61135 142.181 1.75784 139.721 1.75784C138.267 1.75784 136.925 1.90433 135.471 1.90433C126.97 2.34379 118.47 2.78324 109.969 3.2227C107.396 3.36919 104.824 3.51568 102.14 3.66216C100.686 3.66216 99.2315 3.80865 97.7775 3.95514C89.277 4.54108 80.8883 5.12703 72.3878 5.71298C68.0257 6.00595 63.6636 6.29892 59.3015 6.73838C51.8077 7.32433 44.3138 7.91027 36.9318 8.64271C30.4445 9.22865 23.9573 9.66811 17.4701 10.1076C16.4634 10.2541 15.4568 10.2541 14.3383 10.4005C12.6606 10.547 10.9829 10.547 9.30512 10.6935C7.85109 11.2795 6.28521 11.2795 4.83117 11.2795C4.71933 10.6935 4.27193 10.2541 3.93638 10.4005C2.92975 10.4005 2.03496 10.547 1.02832 10.6935C0.580922 10.84 0.133527 11.133 0.0216779 11.7189C-0.0901708 12.4514 0.245375 13.1838 0.69277 13.3303C1.14017 13.4768 1.58756 13.6232 2.03496 13.7697C2.48235 13.9162 2.8179 13.9162 3.26529 13.9162C4.38378 14.0627 5.39042 14.0627 6.50891 14.0627ZM268.235 9.37514C269.577 9.37514 271.031 9.37514 272.373 9.37514C272.485 9.8146 272.709 10.1076 272.933 10.4005C272.373 10.4005 271.814 10.547 271.367 10.547C270.36 10.547 269.353 10.6935 268.347 10.6935C263.873 10.84 259.511 11.133 255.037 11.2795C253.024 11.426 251.01 11.5724 248.997 11.5724C245.865 11.5724 242.622 11.7189 239.49 11.7189C232.22 11.8654 225.061 12.0119 217.791 12.1584C203.698 12.4514 189.717 12.7443 175.624 13.0373C165.558 13.1838 155.491 13.6232 145.425 14.0627C130.325 14.6487 115.114 15.0881 100.014 15.6741C96.9945 15.8205 93.9746 15.967 90.9547 16.26C82.3424 16.846 73.73 17.2854 65.1176 17.8714C56.729 18.4573 48.2285 18.8968 39.8398 19.4827C39.0569 19.4827 38.2739 19.6292 37.491 19.6292C39.728 19.3362 42.0768 19.1897 44.3138 18.8968C52.255 18.1643 60.1963 17.2854 68.1376 16.553C70.9338 16.26 73.73 15.967 76.4144 15.6741C77.8684 15.5276 79.3224 15.3811 80.6646 15.3811C89.0533 14.7951 97.3301 14.0627 105.607 13.4768C107.173 13.3303 108.851 13.1838 110.416 13.0373C112.765 12.8908 115.114 12.7443 117.351 12.7443C125.852 12.3049 134.352 11.8654 142.853 11.426C144.754 11.2795 146.655 11.2795 148.445 11.133C148.892 11.133 149.452 11.133 149.899 11.133C151.241 11.133 152.583 11.133 153.814 10.9865C162.314 10.6935 170.927 10.547 179.427 10.2541C183.342 10.1076 187.256 9.96109 191.171 9.96109C203.81 9.8146 216.561 9.66811 229.2 9.52163C242.398 9.52163 255.372 9.37514 268.235 9.37514Z" fill="url(#paint0_linear_79_126)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_79_126" x1="7.19178" y1="15.1553" x2="19.8628" y2="74.1538" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#29D7FF"/>
+                        <stop offset="0.14" stop-color="#3CBFFF"/>
+                        <stop offset="0.42" stop-color="#7083FF"/>
+                        <stop offset="0.83" stop-color="#C123FF"/>
+                        <stop offset="0.98" stop-color="#E000FF"/>
+                    </linearGradient>
+                    </defs>
+                </svg>
+                <p class="zuzzuu-paragraph text-center my-4">Start your journey with just 3 steps!</p>
+            </div>
+            <div class="use-cycle row mobile-width mx-auto">
+                <img src="/images/landing-page-img-3.png" class="img-fluid p-3 p-md-5"/>
+            </div>
+        </div>
+
+        <div class="landing-page-part4 px-5 my-5">
+            <div class="customer-comments-section mobile-width d-flex flex-wrap align-items-center mx-auto text-break p-3 p-md-5">
+                <h1 class="title w-100">
+                    “ZUZZUU has<br>
+                    revolutionized the way we<br>
+                    <span class="zuzzuu-rainbow-text1">work.”</span>
+                </h1>
+                <p class="paragraph w-100">
+                    "Our teams were spending up to 40% of their workday on administrative<br> tasks such as searching for and compiling data. ZUZZUU's technology<br> automated these tasks, allowing our team members to reclaim their<br> workdays and focus on strategic initiatives​."
+                </p>
+            </div>
+        </div>
+
+        <div class="landing-page-part5 px-5 my-5">
+            <div class="row page-title">
+                <h1 class="zuzzuu-title-l line-h-48p text-center my-4">Tens of integrations to<br>
+                    mashup and <span class="zuzzuu-rainbow-text1"> work your way</span></h1>
+                <p class="zuzzuu-paragraph font-24p text-center">
+                    Integration at its Best: With ZUZZUU, harness the power of integration,<br>
+                    liberate your data, and turbocharge your operations.
+                </p>
+            </div>
+            <div class="row mobile-width mx-auto">
+                <img src="/images/landing-page-img-5.png" class="img-fluid p-3 p-md-5"/>
+            </div>
+        </div>
+
+        <div class="got-a-question d-flex align-items-center p-5">
+            <div class="row w-100">
+                <div class="col-md-7">
+                    <img src="images/zuzzuu-colorful.svg" class="zuzzuu-colorful-icon my-3" height="150" />
+                    <h1 class="title">Got a question?</h1>
+                    <p class="paragraph my-4">Ask a question or make an appointment<br>
+                    for more information. We will contact you quickly.
+                    </p>
+                    <a href="#"><button type="button" class="btn zuzzuu-button-dark">Contact Us</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <footer class="d-flex flex-wrap justify-content-between align-items-end p-3">
+                <div class="row d-flex align-items-center w-100">
+                    <img src="/images/zuzzuu-logo.svg" class="" height="75"/>
+                    <p class="zuzzuu-slogan-text text-center mt-2 mb-5">Surprisingly Revenue <span class="zuzzuu-rainbow-text1">Growth</span></p>
+                </div>
+                <div class="row d-flex align-items-center w-100">
+                    <div class="col-md-4 support-mail-info center-text-on-mobile">
+                        <a href="mailto:info@sarente.com" class="text-decoration-none"><img src="/images/email.svg" class="me-1" height="24"/><span class="span-text">info@sarente.com</span></a>
+                    </div>
+                    <div class="col-md-4 copyright-text my-3 my-md-0">
+                        <span class="span-text">© 2023 <span class="copyright-stars">✦</span> All rights reserved <span class="copyright-stars">✦</span> ZUZZUU.com</span>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="social-media-area list-unstyled d-flex m-0">
+                            <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/#"><i class="social-media-icon fa-brands fa-x-twitter"></i></a></li>
+                            <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/#"><i class="social-media-icon fa-brands fa-instagram"></i></a></li>
+                            <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/#"><i class="social-media-icon fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+    <!-- SLICK SLIDER START -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+    $('.use-cases').slick({
+        dots: true,
+        arrows: false,
+        infinite: false,
+        speed: 500,
+    });
+    </script>
+
+    <!-- SLICK SLIDER END -->
+
+    <!-- JS ACTIONS -->
+    <script>
+        window.onload = function() {
+            var use_cases_btn = document.getElementById("use-cases-btn");
+            use_cases_btn.classList.add("selected");
+            document.getElementById('use-cases-div').style.display = 'block';
+            document.getElementById('benefits-div').style.display = 'none';
+            document.getElementById('competitive-advantages-div').style.display = 'none';
+        };
+
+        function showUseCases(){
+            document.getElementById('use-cases-div').style.display = 'block';
+            document.getElementById('competitive-advantages-div').style.display = 'none';
+            document.getElementById('benefits-div').style.display = 'none';
+            var use_cases_btn = document.getElementById("use-cases-btn");
+            use_cases_btn.classList.add("selected");
+            var competitive_advantages_btn = document.getElementById("competitive-advantages-btn");
+            competitive_advantages_btn.classList.remove("selected");
+            var benefits_btn = document.getElementById("benefits-btn");
+            benefits_btn.classList.remove("selected");
+        }
+        function showCompetitiveAdvantages(){
+            document.getElementById('competitive-advantages-div').style.display = 'block';
+            document.getElementById('benefits-div').style.display = 'none';
+            document.getElementById('use-cases-div').style.display = 'none';
+            var use_cases_btn = document.getElementById("competitive-advantages-btn");
+            use_cases_btn.classList.add("selected");
+            var use_cases_btn = document.getElementById("use-cases-btn");
+            use_cases_btn.classList.remove("selected");
+            var benefits_btn = document.getElementById("benefits-btn");
+            benefits_btn.classList.remove("selected");
+        }
+        function showBenefits(){
+            document.getElementById('benefits-div').style.display = 'block';
+            document.getElementById('competitive-advantages-div').style.display = 'none';
+            document.getElementById('use-cases-div').style.display = 'none';
+            var use_cases_btn = document.getElementById("benefits-btn");
+            use_cases_btn.classList.add("selected");
+            var use_cases_btn = document.getElementById("use-cases-btn");
+            use_cases_btn.classList.remove("selected");
+            var competitive_advantages_btn = document.getElementById("competitive-advantages-btn");
+            competitive_advantages_btn.classList.remove("selected");
+        }
+    </script>
+    <!-- JS ACTIONS -->
+
+    
+</body>
+</html>

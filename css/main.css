@@ -1,0 +1,276 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Rubik:wght@400;700&display=swap');
+
+/* GLOBAL VARIABLES */
+:root{
+    --zuzzuu-pink-rainbow-color: linear-gradient(113deg, #29D7FF 18.07%, #3CBFFF 27.42%, #7083FF 46.12%, #C123FF 73.51%, #E000FF 83.53%);
+    --zuzzuu-main-text-color-light: #FFF;
+    --zuzzuu-main-text-color-darker: #000;
+    --zuzzuu-main-text-color-dark: #2D3448;
+    --zuzzuu-purple-color: #6C21B0;
+    --zuzzuu-purple-color-hover: #b64fe6;
+}
+html, body{
+    padding: 0;
+    margin: 0;
+    background: #FFF;
+    font-family: Outfit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.wrapper{ overflow-x: hidden!important; }
+.font-24p{ font-size: 24px!important; }
+.fontw-300{ font-weight: 300!important; }
+.fontw-400{ font-weight: 400!important; }
+.fontw-500{ font-weight: 500!important; }
+.fontw-600{ font-weight: 600!important; }
+.fontw-700{ font-weight: 700!important; }
+.line-h-48p{ line-height: 48px!important; }
+.center{
+    position: absolute!important;
+    left: 50%!important;
+    -webkit-transform: translateX(-50%)!important;
+    -ms-transform: translateX(-50%)!important;
+    transform: translateX(-50%)!important;
+}
+.zuzzuu-rainbow-text1{
+    background: linear-gradient(130deg, #29D7FF 0%, #3CBFFF 14%, #7083FF 42%, #C123FF 83%, #E000FF 98%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.zuzzuu-rainbow-button{
+    color: #FFF!important;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700!important;
+    line-height: normal;
+    width: 146px;
+    height: 48px;
+    border: 0!important;
+    border-radius: 24px!important;
+    background: var(--zuzzuu-pink-rainbow-color)!important;
+    box-shadow: 2px 0px 10px 5px rgba(224, 1, 255, 0.10);
+    transition: all 0.3s ease-out!important;
+}
+.zuzzuu-rainbow-button:hover{
+    box-shadow: 2px 0px 10px 5px rgba(224, 1, 255, 0.2);
+}
+.zuzzuu-button-dark{
+    color: #FFF!important;
+    text-align: center!important;
+    font-family: Outfit!important;
+    font-size: 20px!important;
+    font-style: normal!important;
+    font-weight: 700!important;
+    line-height: normal!important;
+    width: 200px;
+    height: 50px;
+    border-radius: 16px!important;
+    background: #000!important;
+    transition: all 0.3s ease-in-out!important;
+}
+.zuzzuu-button-dark:hover{ background: #202020!important; }
+.zuzzuu-navbar .nav-link{
+    color: #5A5A5A;
+    font-family: Outfit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.zuzzuu-title-xl{
+    color: var(--zuzzuu-main-text-color-dark);
+    font-family: Outfit;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px;
+}
+.zuzzuu-title-l{
+    color: var(--zuzzuu-main-text-color-dark);
+    font-family: Outfit;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.zuzzuu-paragraph{
+    color: var(--zuzzuu-main-text-color-dark);
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.text-gray{
+    color: #909090;
+}
+.mobile-width{ width: 80%; }
+.center-text-on-mobile{ }
+.use-cases-tabs {
+    height: 48px;
+    width: 50%;
+    border-radius: 12px!important;
+    border: 1px solid #BEBEBE!important;
+}
+.use-cases-tabs .btn{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%!important;
+    color: #BEBEBE!important;
+    font-family: Outfit!important;
+    font-size: 16px!important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    line-height: normal!important;
+    border-radius: 12px!important;
+    border: 0!important;
+    background: #FFF!important;
+}
+.use-cases-tabs .selected{
+    color: #FFF!important;
+    font-weight: 600;
+    background: var(--zuzzuu-pink-rainbow-color)!important;
+}
+.use-cases-tabs .btn-start{ border-top-right-radius: 0!important; border-bottom-right-radius: 0!important; border-right: 1px solid #BEBEBE!important; }
+.use-cases-tabs .btn-center{ border-radius: 0!important; }
+.use-cases-tabs .btn-end{ border-top-left-radius: 0!important; border-bottom-left-radius: 0!important; border-left: 1px solid #BEBEBE!important; }
+.use-cases-slider{
+    border-radius: 16px;
+    min-height: 620px;
+    height: auto;
+    background: #FFF;
+    filter: drop-shadow(0px 5px 50px rgba(0, 0, 0, 0.07));
+}
+.use-cases-slider .title{
+    color: var(--zuzzuu-main-text-color-dark);
+    font-family: Outfit;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.use-cases-slider .paragraph{
+    color: var(--zuzzuu-main-text-color-dark);
+    text-align: justify;
+    font-family: Outfit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.use-cases-slider .slick-list{ height: 100%!important; }
+.use-cases-slider .slick-track{ height: 100%!important; }
+.use-cases-slider .slick-dots li.slick-active button:before { color: var(--zuzzuu-purple-color-hover)!important; }
+#competitive-advantages-div{ height: 520px; }
+#competitive-advantages-div img{ max-width: 80%; }
+#benefits-div{ height: 520px; }
+#benefits-div img{ max-width: 80%; }
+.customer-comments-section{
+    text-align: center;
+    border-radius: 16px;
+    min-height: 520px;
+    height: auto;
+    background: #FFF;
+    filter: drop-shadow(0px 5px 50px rgba(0, 0, 0, 0.07));
+}
+.customer-comments-section .title{
+    color: #2D3448;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px;
+}
+.customer-comments-section .paragraph{
+    color: #2D3448;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.got-a-question{
+    min-height: 540px;
+    width: 100%;
+    background: url(/images/got-a-question-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.got-a-question .title{
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+}
+.got-a-question .paragraph{
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.got-a-question .zuzzuu-colorful-icon{
+    position: relative;
+    left: -25px;
+}
+footer{
+    width: 100%;
+    min-height: 350px;
+    background: url(/images/footer-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer .zuzzuu-slogan-text{
+    color: #2D3448;
+    font-family: Outfit;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+}
+footer .span-text{
+    color: var(--zuzzuu-purple-color);
+    font-variant-numeric: ordinal;
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+footer .copyright-stars{ font-size: 11px!important; }
+footer .social-media-icon{ color: var(--zuzzuu-purple-color)!important; }
+footer .support-mail-info{ text-align: start; }
+footer .support-mail-info .span-text{ top: 2px; position: relative; }
+footer .support-mail-info .span-text:hover{ color: var(--zuzzuu-purple-color-hover)!important; }
+footer .copyright-text{ text-align: center; }
+footer .social-media-area{ justify-content: end; }
+footer .social-media-area .social-media-icon { font-size: 18px; }
+footer .social-media-area .social-media-icon:hover { color: var(--zuzzuu-purple-color-hover)!important; }
+
+
+@media screen and (max-width: 768px) {
+    .mobile-width{ width: 100%; }
+    .center-text-on-mobile{ text-align: center!important; }
+    .use-cases-tabs { width: auto!important; }
+    #competitive-advantages-div img{ max-width: 100%; }
+    #benefits-div img{ max-width: 100%; }
+    .got-a-question{
+        justify-content: center;
+    }
+    footer .support-mail-text{ text-align: center; }
+    footer .social-media-area{ justify-content: center; }
+}
