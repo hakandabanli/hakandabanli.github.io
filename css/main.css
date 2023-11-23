@@ -20,6 +20,7 @@ html, body{
     font-weight: 400;
     line-height: normal;
 }
+
 .wrapper{ overflow-x: hidden!important; }
 .font-24p{ font-size: 24px!important; }
 .fontw-300{ font-weight: 300!important; }
@@ -35,6 +36,16 @@ html, body{
     -ms-transform: translateX(-50%)!important;
     transform: translateX(-50%)!important;
 }
+.zuzzuu-navbar .nav-link.active {
+    font-weight: 600!important;
+    background: linear-gradient(130deg, #29D7FF 0%, #3CBFFF 14%, #7083FF 42%, #C123FF 83%, #E000FF 98%)!important;
+    background-clip: text!important;
+    -webkit-background-clip: text!important;
+    -webkit-text-fill-color: transparent!important;
+}
+.pink-highlight-color{ color: #EA4DF9!important; }
+.green-highlight-color{ color: #B2E01B!important; }
+.orange-highlight-color{ color: #F08139!important; }
 .zuzzuu-rainbow-text1{
     background: linear-gradient(130deg, #29D7FF 0%, #3CBFFF 14%, #7083FF 42%, #C123FF 83%, #E000FF 98%);
     background-clip: text;
@@ -232,7 +243,7 @@ footer{
     background: url(/images/footer-background.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 footer .zuzzuu-slogan-text{
     color: #2D3448;
@@ -260,6 +271,15 @@ footer .copyright-text{ text-align: center; }
 footer .social-media-area{ justify-content: end; }
 footer .social-media-area .social-media-icon { font-size: 18px; }
 footer .social-media-area .social-media-icon:hover { color: var(--zuzzuu-purple-color-hover)!important; }
+
+
+
+.slick-prev.slick-disabled {
+    content: url("/images/swipe-prev-disabled-btn.png");
+}
+.slick-next.slick-disabled {
+    content: url("/images/swipe-next-disabled-btn.png");
+}
 
 
 @media screen and (max-width: 768px) {
