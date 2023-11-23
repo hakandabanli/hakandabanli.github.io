@@ -180,9 +180,9 @@ html, body{
 .use-cases-slider .slick-track{ height: 100%!important; }
 .use-cases-slider .slick-dots li.slick-active button:before { color: var(--zuzzuu-purple-color-hover)!important; }
 #competitive-advantages-div{ height: 520px; }
-#competitive-advantages-div img{ max-width: 80%; }
+#competitive-advantages-div img{ max-width: 65%; }
 #benefits-div{ height: 520px; }
-#benefits-div img{ max-width: 80%; }
+#benefits-div img{ max-width: 65%; }
 .customer-comments-section{
     text-align: center;
     border-radius: 16px;
@@ -273,7 +273,6 @@ footer .social-media-area .social-media-icon { font-size: 18px; }
 footer .social-media-area .social-media-icon:hover { color: var(--zuzzuu-purple-color-hover)!important; }
 
 
-
 .slick-prev.slick-disabled {
     content: url("/images/swipe-prev-disabled-btn.png");
 }
@@ -281,8 +280,8 @@ footer .social-media-area .social-media-icon:hover { color: var(--zuzzuu-purple-
     content: url("/images/swipe-next-disabled-btn.png");
 }
 
-
 @media screen and (max-width: 768px) {
+    .zuzzuu-title-xl{ font-size: 56px!important; }
     .mobile-width{ width: 100%; }
     .center-text-on-mobile{ text-align: center!important; }
     .use-cases-tabs { width: auto!important; }
