@@ -281,7 +281,7 @@ footer .social-media-area .social-media-icon:hover { color: var(--zuzzuu-purple-
 }
 
 @media screen and (max-width: 768px) {
-    .zuzzuu-title-xl{ font-size: 56px!important; }
+    .zuzzuu-title-xl{ font-size: 54px!important; }
     .mobile-width{ width: 100%; }
     .center-text-on-mobile{ text-align: center!important; }
     .use-cases-tabs { width: auto!important; }
