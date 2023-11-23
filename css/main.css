@@ -285,8 +285,8 @@ footer .social-media-area .social-media-icon:hover { color: var(--zuzzuu-purple-
     .mobile-width{ width: 100%; }
     .center-text-on-mobile{ text-align: center!important; }
     .use-cases-tabs { width: auto!important; }
-    #competitive-advantages-div img{ max-width: 100%; }
-    #benefits-div img{ max-width: 100%; }
+    #competitive-advantages-div img{ max-width: 85%; }
+    #benefits-div img{ max-width: 85%; }
     .got-a-question{
         justify-content: center;
     }
