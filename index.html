@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Vodafone Games</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            background-color: var(--vf-background-light)!important;
+        }
+        .all-games-div .page-title{
+            color: #333!important;
+            font-family: Vodafone!important;
+            font-size: 36px!important;
+            font-style: normal!important;
+            font-weight: 300!important;
+            line-height: normal!important;
+        }
+        .all-games-div .game-title{
+            color: #333!important;
+            font-family: Vodafone!important;
+            font-size: 36px!important;
+            font-style: normal!important;
+            font-weight: 700!important;
+            line-height: normal!important;
+        }
+        .all-games-div .game-desc{
+            color: #333!important;
+            font-family: Vodafone!important;
+            font-size: 22px!important;
+            font-style: normal!important;
+            font-weight: 300!important;
+            line-height: normal!important;
+        }
+        .game-card .game-logo-part{
+            border-radius: 8px 8px 0px 0px;
+            background: radial-gradient(50% 50% at 50% 50%, #FB0000 0%, #C40000 100%);
+        }
+    </style>
+    
+</head>
+
+<body>
+    <section id="vf-navbar">
+        <nav class="navbar bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img src="/images/vf-logo.png" alt="Vodafone" width="135" height="40">
+                </a>
+              <form class="d-flex" role="search">
+                <a href="#"><button class="btn vf-button">Giriş Yap</button></a>
+              </form>
+            </div>
+          </nav>
+    </section>
+
+    <section id="vf-banner">
+        <div class="vf-banner-div">
+            <a href="#"><img src="/images/Banner-img-1.jpg" class="img-fluid"/></a>
+        </div>
+    </section>
+
+    <section id="vf-all-games">
+        <div class="all-games-div text-center vf-bg-light p-5">
+            <h1 class="page-title py-3">Tüm Oyunlar</h1>
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-12 col-md-4 game-card me-0 me-md-5 mb-5 mb-md-0">
+                    <div class="game-logo-part d-flex align-items-center justify-content-center h-50">
+                        <img src="/images/winning_cauldron-logo.png" class="img-fluid" width="185" />
+                    </div>
+                    <div class="game-info-part h-50 px-4 pt-4">
+                        <h1 class="game-title text-start">Winning Cauldron</h1>
+                        <p class="game-desc text-start">
+                            Kazan kaynıyor...<br>
+                            Renkleri eşleştir ve oyunu tamamla!
+                        </p>
+                        <a href="/winning-cauldron.html"><button class="btn vf-button play-now">Hemen Oyna</button></a>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 game-card me-0 me-md-5 mb-5 mb-md-0">
+                    <div class="game-logo-part d-flex align-items-center justify-content-center h-50">
+                        <img src="/images/crazy_words-logo.png" class="img-fluid" width="238"/>
+                    </div>
+                    <div class="game-info-part h-50 px-4 pt-4">
+                        <h1 class="game-title text-start">Crazy Words</h1>
+                        <p class="game-desc text-start">
+                            Doğru harfleri yakala.<br>
+                            Kelimeyi oluştur ve ödülü kazan!
+                        </p>
+                        <a href="/crazy-words.html"><button class="btn vf-button play-now">Hemen Oyna</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
