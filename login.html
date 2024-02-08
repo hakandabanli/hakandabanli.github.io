@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Vodafone Games</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            background-color: var(--vf-main-color)!important;
+            height: 100vh;
+        }
+        .vf-login-logo{
+            position: relative;
+            top: -75px;
+        }
+        .login-div{
+            width: 500px;
+            height: 500px;
+            flex-shrink: 0;
+            border-radius: 8px!important;
+            background: #FFF!important;
+        }
+        .login-div .form-elements{
+            width: 100%;
+        }
+        .login-div .form-check-input:checked {
+            background-color: var(--vf-main-color)!important;
+            border-color: var(--vf-main-color)!important;
+        }
+        .login-div .form-check-input:focus {
+            border-color: #fe8686!important;
+            outline: 0!important;
+            box-shadow: none!important;
+        }
+        .login-div .login-title{
+            color: #333!important;
+            font-family: Vodafone!important;
+            font-size: 30px!important;
+            font-style: normal!important;
+            font-weight: 300!important;
+            line-height: normal!important;
+        }
+        .login-div .remember-me{
+            color: #333!important;
+            margin-top: 0.2rem!important;
+            font-family: Vodafone!important;
+            font-size: 24px!important;
+            font-style: normal!important;
+            font-weight: 400!important;
+            line-height: normal!important;
+        }
+        .login-div .forgot-password{
+            color: #333!important;
+            font-family: Vodafone!important;
+            font-size: 24px!important;
+            font-style: normal!important;
+            font-weight: 400!important;
+            line-height: normal!important;
+        }
+        .login-div .form-label{
+            color: #8E8E8E!important;
+            font-family: Vodafone!important;
+            font-size: 16px!important;
+            font-style: normal!important;
+            font-weight: 400!important;
+            line-height: normal!important;
+            position: relative!important;
+            top: 10px!important;
+            background: #FFF!important;
+            left: 10px!important;
+            padding: 2px!important;
+        }
+        .login-div .form-control{
+            color: #8E8E8E!important;
+            font-family: Vodafone!important;
+            font-size: 26px!important;
+            font-style: normal!important;
+            font-weight: 400!important;
+            line-height: normal!important;
+            width: 100%;
+            height: 60px;
+            flex-shrink: 0;
+            border-radius: 8px!important;
+            border: 1px solid #8E8E8E!important;
+        }
+        .login-div .login-submit-btn{
+            width: 100%;
+            height: 60px;
+            flex-shrink: 0;
+        }
+        .login-div .login-form{
+            width: 100%!important;
+            height: 100%!important;
+            position: relative;
+            top: -70px;
+        }
+        .login-div .form-check-input{
+            width: 48px;
+            height: 26px;
+            flex-shrink: 0;
+        }
+        .login-div .login-form hr{ background: #F0F0F0!important; }
+        .login-div [role="switch"][aria-checked="true"] .switch span {
+            left: 21px;
+            background: red;
+            border-color: red;
+        }
+
+
+        @media only screen and (max-width: 768px) {
+            .login-div{
+                width: 100%!important;
+            }
+            .login-div .form-control{
+                font-size: 20px!important;
+            }
+        }
+    </style>
+    
+</head>
+
+<body>
+    <section id="vf-login-screen">
+        <div class="container-fluid center-screen">
+            <div class="login-div col-sm-12 col-md-3 mx-auto p-3 bg-primary">
+                <div class="vf-login-logo text-center">
+                    <img src="/images/vf-login-logo.png" width="120"/>
+                </div>
+                <form class="login-form">
+                    <div class="form-elements">
+                        <h1 class="login-title text-center">Giriş Yap</h1>
+                        <hr>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label mb-0">Telefon Numaranız</label>
+                            <input type="text" inputmode="numeric" class="form-control" id="vf_phone_no" aria-describedby="phone_no" maxlength="11" pattern="[0-9]*" value="05" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label mb-0">Şifre</label>
+                            <input type="password" class="form-control" id="vf_user_password" placeholder="Şifre için S yazıp 7000’e SMS gönder" required>
+                        </div>
+                        <div class="form-check form-switch mb-5">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label remember-me ms-1" for="flexSwitchCheckChecked">Beni Hatırla</label>
+                            <a href="#" class="forgot-password float-end text-decoration-underline">Şifremi Unuttum</a>
+                        </div>
+                        <button type="submit" class="btn vf-button login-submit-btn">Devam Et</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

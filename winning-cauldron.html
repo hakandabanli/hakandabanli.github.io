@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Vodafone Games - Winning Cauldron</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            background-color: var(--vf-background-light)!important;
+        }
+        .game-winning-cauldron .page-title{
+            color: #333!important;
+            text-align: center!important;
+            font-family: Vodafone!important;
+            font-size: 36px!important;
+            font-style: normal!important;
+            font-weight: 700!important;
+            line-height: normal!important;
+        }
+        .game-winning-cauldron .page-subtitle{
+            color: #333!important;
+            font-family: Vodafone!important;
+            font-size: 24px!important;
+            font-style: normal!important;
+            font-weight: 300!important;
+            line-height: normal!important;
+        }
+        .game-tutorial .tutorial-title{
+            color: #333!important;
+            text-align: center!important;
+            font-family: Vodafone!important;
+            font-size: 24px!important;
+            font-style: normal!important;
+            font-weight: 300!important;
+            line-height: normal!important;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <section id="vf-navbar">
+        <nav class="navbar bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img src="/images/vf-logo.png" alt="Vodafone" width="135" height="40">
+                </a>
+                <div class="d-flex">
+                    <a href="login.html"><button class="btn vf-button">Giriş Yap</button></a>
+                </div>
+            </div>
+          </nav>
+    </section>
+
+    <section id="vf-game-winning-cauldron">
+        <div class="game-winning-cauldron text-center vf-bg-light p-5">
+            <h1 class="page-title">Winning Cauldron</h1>
+            <p class="page-subtitle">Nasıl Oynanır?</p>
+            <div class="game-tutorial">
+                <div class="tutorial-images row d-flex justify-content-center">
+                    <div class="col-md-3">
+                        <img src="/images/winning-cauldron-ui-1.png" class="img-fluid" />
+                        <p class="tutorial-title">
+                            Play butonuna
+                            basın ve
+                            oyunu başlatın.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="/images/winning-cauldron-ui-2.png" class="img-fluid" />
+                        <p class="tutorial-title">
+                            Kazandaki topun rengine göre
+                            3 aynı renk topu denk getirin
+                            ve patlatın.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="/images/winning-cauldron-ui-3.png" class="img-fluid" />
+                        <p class="tutorial-title">
+                            Topların tamamını
+                            patlatmayı hedefleyin
+                            ve ödül kazanın.
+                        </p>
+                    </div>
+                </div>
+                <a href="https://vfpmpgames.sarente.com/WinningCauldron/"><button class="btn vf-button start-now my-3">Oyunu Başlat</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLICK SLIDER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- SLICK SLIDER -->
+
+    <script>
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            /* the viewport is less than 768 pixels wide */
+            $('.tutorial-images').slick({
+                    infinite: false,
+                    dots: true,
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                });
+            } 
+    </script>
+    
+</body>
+</html>
